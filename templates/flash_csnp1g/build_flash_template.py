@@ -74,8 +74,8 @@ VCC_BUS_Y = 86.36
 CAP_GND_BUS_Y = 96.52
 
 # Port symbols (left side, angle=0)
-CS_SD_PORT_X, CS_SD_PORT_Y = 120.65, 99.06
-CS_SD_PIN_X = round(CS_SD_PORT_X + 2.54, 2)    # 123.19
+CS_FLASH_PORT_X, CS_FLASH_PORT_Y = 120.65, 99.06
+CS_FLASH_PIN_X = round(CS_FLASH_PORT_X + 2.54, 2)    # 123.19
 
 SD_CLK_PORT_X, SD_CLK_PORT_Y = 120.65, 101.60
 SD_CLK_PIN_X = round(SD_CLK_PORT_X + 2.54, 2)  # 123.19
@@ -121,7 +121,7 @@ def read_port_symbols():
         content = f.read()
 
     extracted = {}
-    for port_name in ['CS_SD', 'SD_CLK', 'SD_MOSI', 'SD_MISO']:
+    for port_name in ['CS_FLASH', 'SD_CLK', 'SD_MOSI', 'SD_MISO']:
         sym_text = extract_symbol(content, port_name)
         if sym_text is None:
             raise ValueError(f"Symbol {port_name} not found in {ports_path}")
@@ -494,9 +494,9 @@ def build_schematic():
     symbols.append(make_power("#PWR03", "power:GND", "GND",
         GND_CAP_X, GND_CAP_Y, angle=0))
 
-    # Ports — CS_SD and SD_CLK on left (angle=0)
-    symbols.append(make_port("#PORT01", "Ports:CS_SD", "CS_SD",
-        CS_SD_PORT_X, CS_SD_PORT_Y, angle=0))
+    # Ports — CS_FLASH and SD_CLK on left (angle=0)
+    symbols.append(make_port("#PORT01", "Ports:CS_FLASH", "CS_FLASH",
+        CS_FLASH_PORT_X, CS_FLASH_PORT_Y, angle=0))
     symbols.append(make_port("#PORT02", "Ports:SD_CLK", "SD_CLK",
         SD_CLK_PORT_X, SD_CLK_PORT_Y, angle=0))
 
@@ -531,8 +531,8 @@ def build_schematic():
 
     wires = []
 
-    # --- CS_SD: port → pin 2 (CD/SDD3) ---
-    wires.append(wire(CS_SD_PIN_X, CS_SD_PORT_Y,
+    # --- CS_FLASH: port → pin 2 (CD/SDD3) ---
+    wires.append(wire(CS_FLASH_PIN_X, CS_FLASH_PORT_Y,
                       MEM_PINS['CD_SDD3'][0], MEM_PINS['CD_SDD3'][1]))
 
     # --- SD_CLK: port → pin 3 (SCLK) ---
@@ -641,7 +641,7 @@ if __name__ == "__main__":
         f.write(content)
     print(f"Written: {output_path}")
     print(f"Components: Mem1 (CSNP1GCR01-BOW), C1 (1uF), C3 (100nF)")
-    print(f"Port symbols: CS_SD, SD_CLK (left), SD_MOSI, SD_MISO (right)")
+    print(f"Port symbols: CS_FLASH, SD_CLK (left), SD_MOSI, SD_MISO (right)")
     print(f"Power symbols: 1x +3.3V, 2x GND")
     print(f"No-connects: pins 1 (SDD2), 7 (SDD1)")
     print(f"\nLayout:")

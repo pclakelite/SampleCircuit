@@ -627,7 +627,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:CS_SD"
+		(symbol "Ports:CS_FLASH"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -648,7 +648,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "CS_SD"
+			(property "Value" "CS_FLASH"
 				(at -1.905 0 0)
 				(effects
 					(font
@@ -674,7 +674,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Signal port creates a global label with name CS_SD"
+			(property "Description" "Signal port creates a global label with name CS_FLASH"
 				(at 0 0 0)
 				(effects
 					(font
@@ -692,7 +692,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "CS_SD_0_1"
+			(symbol "CS_FLASH_0_1"
 				(polyline
 					(pts
 						(xy -5.08 -1.27) (xy -6.35 0) (xy -5.08 1.27) (xy 1.27 1.27) (xy 2.54 0) (xy 1.27 -1.27) (xy -5.08 -1.27)
@@ -706,7 +706,7 @@
 					)
 				)
 			)
-			(symbol "CS_SD_1_1"
+			(symbol "CS_FLASH_1_1"
 				(pin passive line
 					(at 2.54 0 0)
 					(length 0)
@@ -2107,7 +2107,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Ports:CS_SD")
+		(lib_id "Ports:CS_FLASH")
 		(at 120.65 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2124,7 +2124,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "CS_SD"
+		(property "Value" "CS_FLASH"
 			(at 118.75 99.06 0)
 			(effects
 				(font

@@ -97,20 +97,29 @@ U2_PINS = {
 # These GPIO get port symbols wired to them
 GPIO_PORT_MAP = {
     # Left side GPIO with ports
-    'EN':   ('Enable', 'Ports:Enable'),
-    'IO19': ('UD-',    'Ports:UD-'),
-    'IO20': ('UD+',    'Ports:UD+'),
+    'EN':   ('Enable',   'Ports:Enable'),
+    'IO4':  ('BCLK',     'Ports:BCLK'),       # I2S bit clock -> NS4168
+    'IO5':  ('LRCLK',    'Ports:LRCLK'),      # I2S word select -> NS4168
+    'IO6':  ('DIN',      'Ports:DIN'),         # I2S data -> NS4168
+    'IO7':  ('AMP_EN',   'Ports:AMP_EN'),      # Amp enable -> NS4168 CTRL
+    'IO15': ('SD_MISO',  'Ports:SD_MISO'),     # SPI MISO <- SD card + flash
+    'IO16': ('SD_MOSI',  'Ports:SD_MOSI'),     # SPI MOSI -> SD card + flash
+    'IO17': ('SD_CLK',   'Ports:SD_CLK'),      # SPI clock -> SD card + flash
+    'IO18': ('CS_SD',    'Ports:CS_SD'),        # SPI CS -> SD card only
+    'IO8':  ('CS_FLASH', 'Ports:CS_FLASH'),    # SPI CS -> NAND flash only
+    'IO19': ('UD-',      'Ports:UD-'),
+    'IO20': ('UD+',      'Ports:UD+'),
     # Right side GPIO with ports
-    'TXD0': ('TX',     'Ports:TX'),
-    'RXD0': ('RX',     'Ports:RX'),
+    'TXD0': ('TX',       'Ports:TX'),
+    'RXD0': ('RX',       'Ports:RX'),
 }
 
 # GPIO that are no-connect (unused in this template)
 # All bottom pins and remaining right-side GPIO become NC
 NC_PINS = [
-    'IO0', 'IO1', 'IO2', 'IO3', 'IO4', 'IO5', 'IO6', 'IO7', 'IO8',
-    'IO9', 'IO10', 'IO11', 'IO12', 'IO13', 'IO14', 'IO15', 'IO16',
-    'IO17', 'IO18', 'IO21',
+    'IO0', 'IO1', 'IO2', 'IO3',
+    'IO9', 'IO10', 'IO11', 'IO12', 'IO13', 'IO14',
+    'IO21',
     'IO35', 'IO36', 'IO37', 'IO38', 'IO39', 'IO40', 'IO41', 'IO42',
     'IO45', 'IO46', 'IO47', 'IO48',
 ]
