@@ -360,7 +360,7 @@
 #   - All connected pads/traces light up, everything else dims
 #   - Adjust dimming: Edit → Preferences → PCB Editor → Display Options
 #   - Inspect → Net Inspector to browse and highlight nets by name
-# Tip: M (Move) disconnects; G (Drag) maintains connections (see 10E)
+# Tip: M (Move) disconnects; G (Drag) maintains connections (see 11E)
 #
 # 11H. PORT SYMBOL PIN TYPE MUST BE power_in
 # -------------------------------------------
@@ -390,6 +390,17 @@
 # The RV-3028 RTC template (rtc_rv3028) includes its own I2C pull-up
 # resistors (R89=10K on SCL, R94=10K on SDA, pulled to +3.3V).
 # Do NOT add additional pull-ups on the ESP32 side — one set per bus.
+#
+# 11K. NS4168 CTRL-BCLK ACCIDENTAL SHORT (March 2026)
+# ----------------------------------------------------
+# A vertical wire at x=162.56 between y=118.11 and y=123.19 shorted the
+# CTRL (pin 1) and BCLK (pin 3) nets on the NS4168 (U5). This was caused
+# by accidentally dragging a component over a wire in KiCad, creating an
+# unintended connection. The junction at (162.56, 123.19) bridged AMP_EN
+# and BCLK into the same net.
+# Fix: User removed the errant vertical wire segment in KiCad. CTRL/AMP_EN
+# and BCLK are now on separate nets as intended.
+# Prevention: Use M (Move) instead of G (Drag) — see §11E.
 
 
 # =============================================================================
@@ -489,9 +500,26 @@
 # [ ] 4. Investigate R1 Pin 2 floating connection (S13D)
 # [ ] 5. After regenerating, run KiCad Annotate to fix component refs (S13A)
 # [ ] 6. Re-run ERC to verify fixes
+# [ ] 7. Add SCL/SDA ports to ESP32 side for RTC I2C bus (S15A)
 #
 # IMPORTANT: Before modifying the schematic, ALWAYS commit current state first
 # (see S11B). Use the patch system (S6) for changes after initial generation.
+
+
+# =============================================================================
+# 15. MISSING CONNECTIONS
+# =============================================================================
+# 15A. MISSING SCL/SDA PORTS ON ESP32
+# ------------------------------------
+# The RTC (RV-3028-C7) has SCL and SDA port symbols placed (at ~138.43,
+# 260.35 and 138.43, 265.43), but the ESP32 has NO matching SCL or SDA
+# ports wired to any GPIO pins. The I2C bus is currently unconnected.
+#
+# To fix: Add Ports:SCL and Ports:SDA to the ESP32 side wired to chosen
+# GPIO pins. Update §3 GPIO table with the new assignments.
+# User needs to decide which GPIOs to use (verify availability first).
+#
+# Until fixed, the RTC cannot communicate with the ESP32.
 
 
 # END OF SPEC
