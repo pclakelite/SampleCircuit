@@ -306,38 +306,38 @@
       )
     )
   )
-    (symbol "JLCImport:ECAP_470uF_6V3_C2891466"
+    (symbol "JLCImport:ECAP_470uF_16V_C164069"
     (pin_names (offset 1.016) (hide yes))
     (in_bom yes)
     (on_board yes)
     (property "Reference" "C" (at 2.54 0 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "ECAP_470uF_6V3_C2891466" (at 0 -5.81 0)
+    (property "Value" "ECAP_470uF_16V_C164069" (at 0 -5.81 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "JLCImport:EEEFT1V681UP" (at 0 0 0)
+    (property "Footprint" "JLCImport:VZH471M1CTR-0810" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Description" "470uF 6.3V SMD Electrolytic Capacitor" (at 0 0 0)
+    (property "Description" "470uF 16V SMD Electrolytic Capacitor" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "ki_keywords" "C2891466 470uF 6.3V electrolytic" (at 0 0 0)
+    (property "ki_keywords" "C164069 470uF 16V electrolytic Lelon" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C2891466" (at 0 0 0)
+    (property "LCSC" "C164069" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Manufacturer" "" (at 0 0 0)
+    (property "Manufacturer" "Lelon" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Manufacturer Part" "470uF 6.3V" (at 0 0 0)
+    (property "Manufacturer Part" "VZH471M1CTR-0810" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (symbol "ECAP_470uF_6V3_C2891466_0_1"
+    (symbol "ECAP_470uF_16V_C164069_0_1"
       (polyline
         (pts (xy 2.032004 0.508001) (xy -2.032004 0.508001))
         (stroke (width 0.254) (type solid))
@@ -409,6 +409,68 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (symbol "CC0805KRX7R9BB104_0_1"
+      (polyline
+        (pts (xy -0.508001 0) (xy -2.540005 0))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy 0.508001 2.032004) (xy 0.508001 -2.032004))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy 2.540005 0) (xy 0.508001 0))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy -0.508001 -2.032004) (xy -0.508001 2.032004))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (pin unspecified line (at 5.08001 0 180) (length 2.540005)
+        (name "2" (effects (font (size 1.27 1.27)) hide))
+        (number "2" (effects (font (size 1.27 1.27)) hide))
+      )
+      (pin unspecified line (at -5.08001 0 0) (length 2.540005)
+        (name "1" (effects (font (size 1.27 1.27)) hide))
+        (number "1" (effects (font (size 1.27 1.27)) hide))
+      )
+    )
+  )
+    (symbol "JLCImport:CC1206KKX5R8BB226"
+    (pin_names (offset 1.016) (hide yes))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "C" (at 0 2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "CC1206KKX5R8BB226" (at 0 -2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:CC1206KKX5R8BB226" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "22uF(226) ±10% 25V X5R 1206 MLCC" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_keywords" "C2178233 CC1206KKX5R8BB226 YAGEO 22uF 25V" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C2178233" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "YAGEO" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part" "CC1206KKX5R8BB226" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "CC1206KKX5R8BB226_0_1"
       (polyline
         (pts (xy -0.508001 0) (xy -2.540005 0))
         (stroke (width 0.254) (type solid))
@@ -718,6 +780,21 @@
     (stroke (width 0) (type default))
     (uuid "39425b99-f9be-4b59-ab73-1d6dc2b6ebf8")
   )
+
+  (wire (pts (xy 177.8 100.33) (xy 187.96 100.33))
+    (stroke (width 0) (type default))
+    (uuid "b1a2c3d4-e5f6-7890-abcd-ef1234567890")
+  )
+
+  (wire (pts (xy 187.96 100.33) (xy 187.96 105.41))
+    (stroke (width 0) (type default))
+    (uuid "c2b3a4d5-f6e7-8901-bcde-f12345678901")
+  )
+
+  (wire (pts (xy 187.96 115.57) (xy 187.96 118.11))
+    (stroke (width 0) (type default))
+    (uuid "d3c4b5a6-0718-9012-cdef-012345678902")
+  )
   (symbol
     (lib_id "JLCImport:IP6503S-3_1A")
     (at 149.86 100.33 0)
@@ -894,7 +971,7 @@
   )
 
   (symbol
-    (lib_id "JLCImport:ECAP_470uF_6V3_C2891466")
+    (lib_id "JLCImport:ECAP_470uF_16V_C164069")
     (at 177.8 110.49 0)
     (unit 1)
     (exclude_from_sim no)
@@ -906,15 +983,15 @@
       (at 181.61 110.49 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "470uF"
+    (property "Value" "470uF 16V"
       (at 177.8 115.57 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "JLCImport:EEEFT1V681UP"
+    (property "Footprint" "JLCImport:VZH471M1CTR-0810"
       (at 177.8 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C2891466"
+    (property "LCSC" "C164069"
       (at 177.8 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1139,6 +1216,72 @@
       (project "AITestProject"
         (path "/c5e0a3b2-9d4f-6c1a-d7e5-f3a4b6c8d9e0"
           (reference "#PWR07")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "JLCImport:CC1206KKX5R8BB226")
+    (at 187.96 110.49 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-e5f6-7890-1234-567890abcdef")
+    (property "Reference" "C35"
+      (at 184.15 110.49 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "22uF 25V"
+      (at 191.77 110.49 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:CC1206KKX5R8BB226"
+      (at 187.96 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C2178233"
+      (at 187.96 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AITestProject"
+        (path "/c5e0a3b2-9d4f-6c1a-d7e5-f3a4b6c8d9e0"
+          (reference "C35")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "power:GND")
+    (at 187.96 118.11 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "e4f5a6b7-c8d9-0123-4567-890abcdef012")
+    (property "Reference" "#PWR08"
+      (at 187.96 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND"
+      (at 187.96 114.55 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" ""
+      (at 187.96 118.11 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AITestProject"
+        (path "/c5e0a3b2-9d4f-6c1a-d7e5-f3a4b6c8d9e0"
+          (reference "#PWR08")
           (unit 1)
         )
       )

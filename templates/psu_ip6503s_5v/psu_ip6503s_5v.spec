@@ -51,7 +51,8 @@
 # Input protection: D3 SMBJ16CA bidirectional TVS diode (16V clamp)
 # Output inductor: L4 = 10uH (shielded power inductor)
 # Input cap: C34 = 100uF 50V electrolytic (bulk)
-# Output cap: C30 = 470uF 6.3V electrolytic (bulk output smoothing)
+# Output cap: C30 = 470uF 16V electrolytic (bulk output smoothing)
+# Output ceramic: C35 = 22uF 25V X5R ceramic (HF decoupling, parallel with C30)
 # Bootstrap cap: C29 = 100nF ceramic (BST to SW)
 
 
@@ -63,7 +64,7 @@
 # VIN_PROT     | +12V -> D3 (TVS, parallel to GND) -> U10.VIN (pin 1)
 # SW_NODE      | U10.SW (pin 7) -> L4 (10uH) -> VOUT rail
 # BST_NET      | U10.BST (pin 8) -> C29 -> SW_NODE
-# VOUT_RAIL    | L4 output -> C30 (470uF) -> +5V
+# VOUT_RAIL    | L4 output -> C30 (470uF) || C35 (22uF) -> +5V
 
 
 # =============================================================================
@@ -109,11 +110,21 @@
 #   JLCPCB:    Extended part
 #   Nets:      Pin+ -> VIN rail, Pin- -> GND
 
-# [C30] 470uF 6.3V -- Output bulk capacitor
-#   LCSC:      C2891466
-#   Package:   SMD electrolytic
+# [C30] 470uF 16V -- Output bulk capacitor
+#   LCSC:      C164069
+#   Symbol:    JLCImport:ECAP_470uF_16V_C164069
+#   Package:   SMD electrolytic 8x10mm (Lelon VZH471M1CTR-0810)
 #   JLCPCB:    Extended part
 #   Nets:      Pin+ -> VOUT rail (+5V), Pin- -> GND
+#   Note:      Upgraded from 6.3V to 16V for adequate voltage margin (3.2x derating)
+
+# [C35] 22uF 25V -- Output ceramic capacitor (HF decoupling)
+#   LCSC:      C2178233
+#   Symbol:    JLCImport:CC1206KKX5R8BB226
+#   Package:   1206 (YAGEO X5R)
+#   JLCPCB:    Extended part
+#   Nets:      Pin1 -> VOUT rail (+5V), Pin2 -> GND
+#   Note:      In parallel with C30. Low ESR for fast transient response.
 
 # [C29] 100nF -- Bootstrap capacitor (BST to SW)
 #   LCSC:      C49678
@@ -133,10 +144,11 @@
 # D3   | SMBJ16CA       | 16V TVS       | SMB         | C284001   | Extended
 # L4   | Inductor       | 10uH >=3A    | SMD 5x5     | C408335   | Extended
 # C34  | Electrolytic   | 100uF 50V     | SMD         | C2992088  | Extended
-# C30  | Electrolytic   | 470uF 6.3V    | SMD         | C2891466  | Extended
+# C30  | Electrolytic   | 470uF 16V     | SMD 8x10    | C164069   | Extended
+# C35  | Ceramic        | 22uF 25V X5R  | 1206        | C2178233  | Extended
 # C29  | Ceramic        | 100nF 50V     | 0805        | C49678    | Basic
 #
-# Total: 6 components (1 basic, 5 extended)
+# Total: 7 components (1 basic, 6 extended)
 # NOTE: LCSC part numbers are tentative -- verify stock before build script.
 
 
@@ -147,7 +159,8 @@
 # [ ] BST (pin 8) -> C29 -> SW (pin 7)
 # [ ] SW (pin 7) -> L4 (10uH) -> VOUT rail (+5V)
 # [ ] C34 (100uF) between VIN rail and GND
-# [ ] C30 (470uF) between VOUT rail and GND
+# [ ] C30 (470uF 16V) between VOUT rail and GND
+# [ ] C35 (22uF 25V) between VOUT rail and GND (parallel with C30)
 # [ ] GND on pins 6 and 9
 # [ ] NC flags on pins 2, 3, 4
 # [ ] All positions on 1.27mm grid
