@@ -219,11 +219,12 @@
 # A wire endpoint that is off by even 0.01mm from a pin endpoint will
 # NOT connect. Always calculate pin positions using the formula above.
 #
-# 7C. ALL COORDINATES ON 1.27mm (50 mil) GRID
-# --------------------------------------------
+# 7C. ALL COORDINATES ON 2.54mm (100 mil) GRID
+# ---------------------------------------------
 # Every component center, wire endpoint, and symbol position MUST be a
-# multiple of 1.27mm. Off-grid components cause wiring nightmares.
-#   snap(val) = round(round(val / 1.27) * 1.27, 2)
+# multiple of 2.54mm (100 mil). This is the standard KiCad schematic grid.
+# Off-grid components cause wiring nightmares in manual editing.
+#   snap(val) = round(round(val / 2.54) * 2.54, 2)
 #
 # 7D. JLCPCB R/C SYMBOLS ARE HORIZONTAL
 # ---------------------------------------

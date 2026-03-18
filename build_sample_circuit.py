@@ -33,21 +33,22 @@ TEMPLATE_ROOT_UUIDS = {
 }
 
 # Layout: each template gets an X/Y offset so they don't overlap on A3
+# All offsets MUST be multiples of 2.54mm (100 mil grid)
 TEMPLATES = [
     {"key": "psu_12v", "script": "templates/psu_lmzm23601_12v/build_psu_lmzm23601_12v.py",
      "dx": 0, "dy": 0, "pwr_off": 0, "port_off": -1},
     {"key": "psu_5v",  "script": "templates/psu_lmzm23601_5v/build_psu_lmzm23601_5v.py",
-     "dx": 120, "dy": 0, "pwr_off": 10, "port_off": -1},
+     "dx": 119.38, "dy": 0, "pwr_off": 10, "port_off": -1},
     {"key": "psu_3v3", "script": "templates/psu_lmzm23601_3v3/build_psu_lmzm23601_3v3.py",
-     "dx": 240, "dy": 0, "pwr_off": 20, "port_off": -1},
+     "dx": 238.76, "dy": 0, "pwr_off": 20, "port_off": -1},
     {"key": "esp32",   "script": "templates/esp32s3_core/build_esp32s3_template.py",
-     "dx": 0, "dy": 100, "pwr_off": 30, "port_off": 0},
+     "dx": 0, "dy": 99.06, "pwr_off": 30, "port_off": 0},
     {"key": "audio",   "script": "templates/audio_ns4168/build_audio_ns4168.py",
-     "dx": 200, "dy": 100, "pwr_off": 40, "port_off": 10},
+     "dx": 200.66, "dy": 99.06, "pwr_off": 40, "port_off": 10},
     {"key": "flash",   "script": "templates/flash_csnp1g/build_flash_template.py",
-     "dx": 0, "dy": 210, "pwr_off": 50, "port_off": 20},
+     "dx": 0, "dy": 210.82, "pwr_off": 50, "port_off": 20},
     {"key": "sdcard",  "script": "templates/sdcard_spi/build_sdcard_template.py",
-     "dx": 140, "dy": 210, "pwr_off": 60, "port_off": 30},
+     "dx": 139.7, "dy": 210.82, "pwr_off": 60, "port_off": 30},
 ]
 
 
@@ -116,20 +117,25 @@ def extract_body(content):
     return content[ls_end + 1:si_start].strip()
 
 
-def offset_body(body, dx, dy):
-    """Apply X/Y coordinate offsets to all (at ...) and (xy ...) in body text."""
-    if dx == 0 and dy == 0:
-        return body
+GRID = 2.54  # Standard KiCad schematic grid (100 mil)
 
+
+def snap(val):
+    """Snap a coordinate value to the 2.54mm grid."""
+    return round(round(val / GRID) * GRID, 2)
+
+
+def offset_body(body, dx, dy):
+    """Apply X/Y coordinate offsets and snap to 2.54mm grid."""
     def off_at(m):
-        x = round(float(m.group(1)) + dx, 3)
-        y = round(float(m.group(2)) + dy, 3)
+        x = snap(float(m.group(1)) + dx)
+        y = snap(float(m.group(2)) + dy)
         a = m.group(3) or ""
         return f"(at {x} {y}{a})"
 
     def off_xy(m):
-        x = round(float(m.group(1)) + dx, 3)
-        y = round(float(m.group(2)) + dy, 3)
+        x = snap(float(m.group(1)) + dx)
+        y = snap(float(m.group(2)) + dy)
         return f"(xy {x} {y})"
 
     body = re.sub(r"\(at (-?[\d.]+) (-?[\d.]+)(\s+-?[\d.]+)?\)", off_at, body)
@@ -341,13 +347,13 @@ def build_terminal_blocks():
 
     lib_symbols_str = "\n".join(lib_parts)
 
-    # Terminal block layout — vertical column, 25mm spacing
+    # Terminal block layout — vertical column, 25.4mm spacing (10 grid units)
     # WJ500V-5_08-2P pin positions (local coords):
     #   Pin 1: (-1.27, -5.08) angle=90 → endpoint at (sx - 1.27, sy + 5.08)
     #   Pin 2: (1.27, -5.08) angle=90  → endpoint at (sx + 1.27, sy + 5.08)
-    BASE_X = 120
-    BASE_Y = 100
-    SPACING = 25
+    BASE_X = 119.38   # 47 * 2.54
+    BASE_Y = 99.06    # 39 * 2.54
+    SPACING = 25.4    # 10 * 2.54
 
     terminals = [
         {"ref": "J1", "label": "24V INPUT",  "power": "+24V",  "x": BASE_X, "y": BASE_Y},
@@ -656,7 +662,7 @@ def main():
     tb_body = extract_body(tb_sch)
     # Terminal blocks already use COMBINED_UUID and "SampleCircuit" project name
     # Apply offset to bottom-right area
-    tb_body = offset_body(tb_body, 280, 210)
+    tb_body = offset_body(tb_body, 279.4, 210.82)
     # Renumber #PWR to avoid collisions (terminal blocks use #PWR01-#PWR10)
     tb_body = renumber_refs(tb_body, 70, 40)
     tb_body = regenerate_uuids(tb_body, keep=COMBINED_UUID)
