@@ -5,7 +5,7 @@
 	(uuid "f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7")
 	(paper "A3")
 	(lib_symbols
-		(symbol "+12V_1"
+    (symbol "+12V_1"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -121,7 +121,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "+12V_2"
+    (symbol "+12V_2"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -237,7 +237,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "+12V_3"
+    (symbol "+12V_3"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -353,7 +353,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "+24V_1"
+    (symbol "+24V_1"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -469,7 +469,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "+3.3V_1"
+    (symbol "+3.3V_1"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -585,7 +585,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "+3.3V_2"
+    (symbol "+3.3V_2"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -701,7 +701,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "+3.3V_3"
+    (symbol "+3.3V_3"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -817,7 +817,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "+3.3V_4"
+    (symbol "+3.3V_4"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -933,7 +933,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "+3.3V_5"
+    (symbol "+3.3V_5"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -1049,7 +1049,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "+3.3V_6"
+    (symbol "+3.3V_6"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -1165,7 +1165,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "+3.3V_7"
+    (symbol "+3.3V_7"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -1281,7 +1281,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "+5V_1"
+    (symbol "+5V_1"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -1397,7 +1397,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "+5V_2"
+    (symbol "+5V_2"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -1513,7 +1513,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "0805W8F1002T5E_1"
+    (symbol "0805W8F1002T5E_1"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1654,7 +1654,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "0805W8F1002T5E_2"
+    (symbol "0805W8F1002T5E_2"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1795,7 +1795,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "0805W8F1002T5E_3"
+    (symbol "0805W8F1002T5E_3"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1936,7 +1936,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "0805W8F1002T5E_4"
+    (symbol "0805W8F1002T5E_4"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2077,7 +2077,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "1206X476M160NT_1"
+    (symbol "1206X476M160NT_1"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2255,7 +2255,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "CC0805KRX7R9BB104_1"
+    (symbol "CC0805KRX7R9BB104_1"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -2430,7 +2430,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "CC0805KRX7R9BB104_2"
+    (symbol "CC0805KRX7R9BB104_2"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -2605,7 +2605,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "CC0805KRX7R9BB104_3"
+    (symbol "CC0805KRX7R9BB104_3"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -2780,7 +2780,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "CC0805KRX7R9BB104_4"
+    (symbol "CC0805KRX7R9BB104_4"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -2955,7 +2955,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "CC0805KRX7R9BB104_5"
+    (symbol "CC0805KRX7R9BB104_5"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -3130,7 +3130,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "CL21B105KBFNNNE_1"
+    (symbol "CL21B105KBFNNNE_1"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3308,7 +3308,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_1"
+    (symbol "GND_1"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -3400,7 +3400,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_10"
+    (symbol "GND_10"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -3492,7 +3492,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_11"
+    (symbol "GND_11"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -3584,7 +3584,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_12"
+    (symbol "GND_12"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -3676,7 +3676,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_13"
+    (symbol "GND_13"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -3768,7 +3768,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_14"
+    (symbol "GND_14"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -3860,7 +3860,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_15"
+    (symbol "GND_15"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -3952,7 +3952,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_16"
+    (symbol "GND_16"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4044,7 +4044,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_17"
+    (symbol "GND_17"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4136,7 +4136,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_18"
+    (symbol "GND_18"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4228,7 +4228,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_19"
+    (symbol "GND_19"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4320,7 +4320,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_2"
+    (symbol "GND_2"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4412,7 +4412,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_20"
+    (symbol "GND_20"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4504,7 +4504,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_21"
+    (symbol "GND_21"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4596,7 +4596,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_22"
+    (symbol "GND_22"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4688,7 +4688,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_23"
+    (symbol "GND_23"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4780,7 +4780,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_24"
+    (symbol "GND_24"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4872,7 +4872,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_25"
+    (symbol "GND_25"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4964,7 +4964,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_26"
+    (symbol "GND_26"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -5056,7 +5056,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_27"
+    (symbol "GND_27"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -5148,7 +5148,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_28"
+    (symbol "GND_28"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -5240,7 +5240,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_29"
+    (symbol "GND_29"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -5332,7 +5332,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_3"
+    (symbol "GND_3"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -5424,7 +5424,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_30"
+    (symbol "GND_30"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -5516,7 +5516,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_31"
+    (symbol "GND_31"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -5608,7 +5608,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_32"
+    (symbol "GND_32"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -5700,7 +5700,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_33"
+    (symbol "GND_33"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -5792,7 +5792,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_34"
+    (symbol "GND_34"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -5884,7 +5884,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_35"
+    (symbol "GND_35"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -5976,7 +5976,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_36"
+    (symbol "GND_36"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -6068,7 +6068,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_37"
+    (symbol "GND_37"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -6160,7 +6160,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_4"
+    (symbol "GND_4"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -6252,7 +6252,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_5"
+    (symbol "GND_5"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -6344,7 +6344,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_6"
+    (symbol "GND_6"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -6436,7 +6436,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_7"
+    (symbol "GND_7"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -6528,7 +6528,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_8"
+    (symbol "GND_8"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -6620,7 +6620,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_9"
+    (symbol "GND_9"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -6712,7 +6712,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GRM32ER7YA106KA12L_1"
+    (symbol "GRM32ER7YA106KA12L_1"
 			(pin_numbers
 				(hide yes)
 			)
@@ -6890,7 +6890,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GRM32ER7YA106KA12L_2"
+    (symbol "GRM32ER7YA106KA12L_2"
 			(pin_numbers
 				(hide yes)
 			)
@@ -7068,7 +7068,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GRM32ER7YA106KA12L_3"
+    (symbol "GRM32ER7YA106KA12L_3"
 			(pin_numbers
 				(hide yes)
 			)
@@ -7246,7 +7246,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GRM32ER7YA106KA12L_4"
+    (symbol "GRM32ER7YA106KA12L_4"
 			(pin_numbers
 				(hide yes)
 			)
@@ -7424,7 +7424,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GRM32ER7YA106KA12L_5"
+    (symbol "GRM32ER7YA106KA12L_5"
 			(pin_numbers
 				(hide yes)
 			)
@@ -7602,7 +7602,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:0805W8F1001T5E"
+    (symbol "JLCImport:0805W8F1001T5E"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -7740,7 +7740,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:0805W8F1002T5E"
+    (symbol "JLCImport:0805W8F1002T5E"
 			(pin_numbers
 				(hide yes)
 			)
@@ -7881,7 +7881,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:0805W8F1003T5E"
+    (symbol "JLCImport:0805W8F1003T5E"
 			(pin_numbers
 				(hide yes)
 			)
@@ -8022,7 +8022,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:0805W8F1104T5E"
+    (symbol "JLCImport:0805W8F1104T5E"
 			(pin_numbers
 				(hide yes)
 			)
@@ -8163,7 +8163,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:0805W8F2491T5E"
+    (symbol "JLCImport:0805W8F2491T5E"
 			(pin_numbers
 				(hide yes)
 			)
@@ -8304,7 +8304,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:0805W8F4221T5E"
+    (symbol "JLCImport:0805W8F4221T5E"
 			(pin_numbers
 				(hide yes)
 			)
@@ -8445,7 +8445,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:1206X476M160NT"
+    (symbol "JLCImport:1206X476M160NT"
 			(pin_numbers
 				(hide yes)
 			)
@@ -8623,7 +8623,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:CC0805KRX7R9BB104"
+    (symbol "JLCImport:CC0805KRX7R9BB104"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -8798,7 +8798,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:CL21A106KAYNNNE"
+    (symbol "JLCImport:CL21A106KAYNNNE"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -8973,7 +8973,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:CL21B105KBFNNNE"
+    (symbol "JLCImport:CL21B105KBFNNNE"
 			(pin_numbers
 				(hide yes)
 			)
@@ -9151,7 +9151,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:CR2032-BS-2-1"
+    (symbol "JLCImport:CR2032-BS-2-1"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -9326,7 +9326,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:CSNP1GCR01-BOW"
+    (symbol "JLCImport:CSNP1GCR01-BOW"
 			(pin_numbers
 				(hide yes)
 			)
@@ -9592,7 +9592,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:ECAP_100uF_50V_C2992088"
+    (symbol "JLCImport:ECAP_100uF_50V_C2992088"
 			(pin_numbers
 				(hide yes)
 			)
@@ -9794,7 +9794,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:EEEFT1V681UP"
+    (symbol "JLCImport:EEEFT1V681UP"
 			(pin_numbers
 				(hide yes)
 			)
@@ -9996,7 +9996,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:ESP32-S3-WROOM-1_N16R8"
+    (symbol "JLCImport:ESP32-S3-WROOM-1_N16R8"
 			(pin_names
 				(offset 1.016)
 			)
@@ -10853,7 +10853,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:GRM32EC81C476KE15L"
+    (symbol "JLCImport:GRM32EC81C476KE15L"
 			(pin_numbers
 				(hide yes)
 			)
@@ -11031,7 +11031,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:GRM32ER7YA106KA12L"
+    (symbol "JLCImport:GRM32ER7YA106KA12L"
 			(pin_numbers
 				(hide yes)
 			)
@@ -11209,7 +11209,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:LMZM23601SILR"
+    (symbol "JLCImport:LMZM23601SILR"
 			(pin_numbers
 				(hide yes)
 			)
@@ -11529,7 +11529,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:Micro_SD_Card_C585354"
+    (symbol "JLCImport:Micro_SD_Card_C585354"
 			(pin_names
 				(offset 1.016)
 			)
@@ -11792,7 +11792,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:NS4168_C910588"
+    (symbol "JLCImport:NS4168_C910588"
 			(pin_numbers
 				(hide yes)
 			)
@@ -12076,7 +12076,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:PMEG6030EVPX"
+    (symbol "JLCImport:PMEG6030EVPX"
 			(pin_numbers
 				(hide yes)
 			)
@@ -12254,7 +12254,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:RV-3028-C7_32_768KHZ_1PPM_TA_QC"
+    (symbol "JLCImport:RV-3028-C7_32_768KHZ_1PPM_TA_QC"
 			(pin_names
 				(offset 1.016)
 			)
@@ -12517,7 +12517,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:TLV803SDBZR"
+    (symbol "JLCImport:TLV803SDBZR"
 			(pin_names
 				(offset 1.016)
 			)
@@ -12690,7 +12690,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:TS665WS_C2686403"
+    (symbol "JLCImport:TS665WS_C2686403"
 			(pin_numbers
 				(hide yes)
 			)
@@ -12853,7 +12853,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:WJ500V-5_08-2P-14-00A"
+    (symbol "JLCImport:WJ500V-5_08-2P-14-00A"
 			(pin_names
 				(offset 1.016)
 			)
@@ -12990,7 +12990,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LMZM23601SILR_1"
+    (symbol "LMZM23601SILR_1"
 			(pin_numbers
 				(hide yes)
 			)
@@ -13310,7 +13310,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LMZM23601SILR_2"
+    (symbol "LMZM23601SILR_2"
 			(pin_numbers
 				(hide yes)
 			)
@@ -13630,7 +13630,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:AMP_EN"
+    (symbol "Ports:AMP_EN"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -13731,7 +13731,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:BCLK"
+    (symbol "Ports:BCLK"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -13832,7 +13832,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:BOOT"
+    (symbol "Ports:BOOT"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -13933,7 +13933,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:CS_FLASH"
+    (symbol "Ports:CS_FLASH"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -14034,7 +14034,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:CS_SD"
+    (symbol "Ports:CS_SD"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -14135,7 +14135,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:DIN"
+    (symbol "Ports:DIN"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -14236,7 +14236,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:Enable"
+    (symbol "Ports:Enable"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -14337,7 +14337,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:LRCLK"
+    (symbol "Ports:LRCLK"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -14438,7 +14438,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:OUTN"
+    (symbol "Ports:OUTN"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -14539,7 +14539,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:OUTP"
+    (symbol "Ports:OUTP"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -14640,7 +14640,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:RX"
+    (symbol "Ports:RX"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -14741,7 +14741,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:SCL"
+    (symbol "Ports:SCL"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -14842,7 +14842,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:SDA"
+    (symbol "Ports:SDA"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -14943,7 +14943,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:SD_CLK"
+    (symbol "Ports:SD_CLK"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -15044,7 +15044,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:SD_MISO"
+    (symbol "Ports:SD_MISO"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -15145,7 +15145,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:SD_MOSI"
+    (symbol "Ports:SD_MOSI"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -15246,7 +15246,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:TX"
+    (symbol "Ports:TX"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -15347,7 +15347,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:UD+"
+    (symbol "Ports:UD+"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -15448,7 +15448,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Ports:UD-"
+    (symbol "Ports:UD-"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -15549,7 +15549,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+12V"
+    (symbol "power:+12V"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -15665,7 +15665,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+24V"
+    (symbol "power:+24V"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -15781,7 +15781,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
+    (symbol "power:+3.3V"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -15897,7 +15897,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
+    (symbol "power:+5V"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -16013,7 +16013,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+    (symbol "power:GND"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -16105,7 +16105,123 @@
 			)
 			(embedded_fonts no)
 		)
-	)
+    (symbol "JLCImport:SS34_C8678"
+    (pin_numbers (hide yes))
+    (pin_names (offset 1.016) (hide yes))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "D" (at 0 2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SS34_C8678" (at 0 -2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:SS34_C8678" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://item.szlcsc.com/34721.html" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "SS34" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_keywords" "C8678 MDD SMA_L4.3-W2.6-LS5.2-RD SS34" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C8678" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "MDD" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part" "SS34" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "SS34_C8678_0_1"
+      (polyline
+        (pts (xy 1.270003 1.524003) (xy -1.270003 0) (xy 1.270003 -1.778004) (xy 1.270003 1.524003))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy -1.270003 0) (xy -1.270003 -2.032004) (xy -0.762002 -2.032004) (xy -0.762002 -1.778004))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy -1.270003 0) (xy -1.270003 2.032004) (xy -1.778004 2.032004) (xy -1.778004 1.778004))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (pin unspecified line (at 5.08001 0 180) (length 3.810008)
+        (name "A" (effects (font (size 1.27 1.27)) hide))
+        (number "2" (effects (font (size 1.27 1.27)) hide))
+      )
+      (pin unspecified line (at -5.08001 0 0) (length 3.810008)
+        (name "K" (effects (font (size 1.27 1.27)) hide))
+        (number "1" (effects (font (size 1.27 1.27)) hide))
+      )
+    )
+  )
+    (symbol "JLCImport:SMBJ26CA_C89651"
+    (pin_numbers (hide yes))
+    (pin_names (offset 1.016) (hide yes))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "D" (at 0 2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SMBJ26CA_C89651" (at 0 -2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:SMBJ26CA_C89651" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "SMBJ26CA TVS Diode 26V Bidirectional 600W SMB" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_keywords" "C89651 SMBJ26CA SMB TVS bidirectional 26V" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C89651" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "LRC" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part" "SMBJ26CA" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "SMBJ26CA_C89651_0_1"
+      (polyline
+        (pts (xy -2.540005 1.270003) (xy 0 0) (xy -2.540005 -1.270003) (xy -2.540005 1.270003))
+        (stroke (width 0.254) (type solid))
+        (fill (type outline))
+      )
+      (polyline
+        (pts (xy 2.540005 1.270003) (xy 0 0) (xy 2.540005 -1.270003) (xy 2.540005 1.270003))
+        (stroke (width 0.254) (type solid))
+        (fill (type outline))
+      )
+      (polyline
+        (pts (xy -0.508001 1.524003) (xy -0.508001 1.524003) (xy 0 1.524003) (xy 0 -1.524003) (xy 0.508001 -1.524003) (xy 0.508001 -1.524003))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (pin unspecified line (at 5.08001 0 180) (length 2.540005)
+        (name "A" (effects (font (size 1.27 1.27)) hide))
+        (number "2" (effects (font (size 1.27 1.27)) hide))
+      )
+      (pin unspecified line (at -5.08001 0 0) (length 2.540005)
+        (name "K" (effects (font (size 1.27 1.27)) hide))
+        (number "1" (effects (font (size 1.27 1.27)) hide))
+      )
+    )
+  )
+  )
 	(junction
 		(at 341.63 46.99)
 		(diameter 0)
@@ -23470,69 +23586,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:+24V")
-		(at 34.32 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "849fbdbb-a4ff-41f6-ae0e-f15087ae4882")
-		(property "Reference" "#PWR01"
-			(at 34.32 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+24V"
-			(at 33.812 35.052 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.32 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.32 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 34.32 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9347e818-b563-48bb-9982-b420d9c9f0f7")
-		)
-		(instances
-			(project "SampleCircuit"
-				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
+	
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
@@ -28566,7 +28620,210 @@
 			)
 		)
 	)
-	(sheet_instances
+
+
+  (symbol
+    (lib_id "JLCImport:SS34_C8678")
+    (at 34.32 34.29 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "c01f8514-a231-488c-a319-c3ee560c669a")
+    (property "Reference" "D9"
+      (at 38.13 34.29 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SS34"
+      (at 30.51 34.29 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:SS34_C8678"
+      (at 34.32 34.29 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Datasheet" ""
+      (at 34.32 34.29 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Description" ""
+      (at 34.32 34.29 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "LCSC" "C8678"
+      (at 34.32 34.29 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (pin "2"
+      (uuid "c3a99707-ccef-442c-9b69-e17655abe1d5")
+    )
+    (pin "1"
+      (uuid "867682fc-fb4c-484b-85f8-82054adebea5")
+    )
+    (instances
+      (project "SampleCircuit"
+        (path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+          (reference "D9")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "JLCImport:SMBJ26CA_C89651")
+    (at 27.94 49.53 270)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "c279b630-8163-4c0c-a491-4461199f92af")
+    (property "Reference" "D10"
+      (at 31.75 49.53 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SMBJ26CA"
+      (at 24.13 49.53 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:SMBJ26CA_C89651"
+      (at 27.94 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Datasheet" ""
+      (at 27.94 49.53 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Description" ""
+      (at 27.94 49.53 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "LCSC" "C89651"
+      (at 27.94 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (pin "2"
+      (uuid "56927061-240f-4dce-99d3-04ea1b8c8009")
+    )
+    (pin "1"
+      (uuid "ab459cb8-2f7e-4373-a3bb-3d19557f42a1")
+    )
+    (instances
+      (project "SampleCircuit"
+        (path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+          (reference "D10")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "power:+24V")
+    (at 34.32 29.21 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ad98e355-64ef-45e4-acc2-6fe12b83c7cf")
+    (property "Reference" "#PWR01"
+      (at 34.32 33.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Value" "+24V"
+      (at 34.32 24.89 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" ""
+      (at 34.32 29.21 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Datasheet" ""
+      (at 34.32 29.21 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Description" ""
+      (at 34.32 29.21 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1"
+      (uuid "096109fc-fe8c-4b8f-af7b-406b20280dc9")
+    )
+    (instances
+      (project "SampleCircuit"
+        (path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+          (reference "#PWR01")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "power:GND")
+    (at 27.94 57.15 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "3470873f-e68e-42b0-b32b-36910bad1d52")
+    (property "Reference" "#PWR104"
+      (at 27.94 63.5 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Value" "GND"
+      (at 27.94 60.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" ""
+      (at 27.94 57.15 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Datasheet" ""
+      (at 27.94 57.15 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Description" ""
+      (at 27.94 57.15 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (pin "1"
+      (uuid "18a91f7d-56e3-4d8f-84a5-5b0e7f1e3fc1")
+    )
+    (instances
+      (project "SampleCircuit"
+        (path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+          (reference "#PWR104")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (junction (at 34.32 43.18)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "44c454dd-6126-4a67-a461-7eef99bb62dc")
+  )
+
+  (wire (pts (xy 27.94 43.18) (xy 27.94 44.45))
+    (stroke (width 0) (type default))
+    (uuid "0f9ba500-da0f-44f7-a133-2cd484a7ef0c")
+  )
+
+  (wire (pts (xy 27.94 43.18) (xy 34.32 43.18))
+    (stroke (width 0) (type default))
+    (uuid "99228597-3fca-410d-a33c-ad3228791363")
+  )
+
+  (wire (pts (xy 27.94 54.61) (xy 27.94 57.15))
+    (stroke (width 0) (type default))
+    (uuid "99fbce43-2589-4817-b06b-ef8ca0356a40")
+  )	(sheet_instances
 		(path "/"
 			(page "1")
 		)
