@@ -1,0 +1,18 @@
+{
+    "template": "flash_csnp1g",
+    "description": "CSNP1GCR01-BOW 1Gbit NAND flash in SPI mode with decoupling capacitors",
+    "references": ["Mem1", "C1", "C2"],
+    "power_refs": ["#PWR?", "#PWR?", "#PWR?"],
+    "port_refs": ["#PORT?", "#PORT?", "#PORT?", "#PORT?"],
+    "lib_symbols": [
+        "JLCImport:CSNP1GCR01-BOW",
+        "JLCImport:CC0805KRX7R9BB104",
+        "JLCImport:CL21B105KBFNNNE",
+        "Ports:CS_FLASH",
+        "Ports:SD_CLK",
+        "Ports:SD_MISO",
+        "Ports:SD_MOSI",
+        "power:+3.3V",
+        "power:GND"
+    ]
+}

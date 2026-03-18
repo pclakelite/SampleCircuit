@@ -1,0 +1,17 @@
+{
+    "template": "sdcard_spi",
+    "description": "Micro SD card connector in SPI mode with decoupling capacitor",
+    "references": ["U6", "C11"],
+    "power_refs": ["#PWR01", "#PWR02", "#PWR03", "#PWR04"],
+    "port_refs": ["#PORT01", "#PORT02", "#PORT03", "#PORT04"],
+    "lib_symbols": [
+        "JLCImport:Micro_SD_Card_C585354",
+        "JLCImport:CC0805KRX7R9BB104",
+        "Ports:CS_SD",
+        "Ports:SD_CLK",
+        "Ports:SD_MISO",
+        "Ports:SD_MOSI",
+        "power:+3.3V",
+        "power:GND"
+    ]
+}

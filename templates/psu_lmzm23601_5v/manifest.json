@@ -1,0 +1,17 @@
+{
+    "template": "psu_lmzm23601_5v",
+    "description": "LMZM23601SILR 12V-to-5V buck regulator with feedback divider and decoupling",
+    "references": ["U6", "R3", "R4", "C31", "C32", "C33"],
+    "power_refs": ["#PWR01", "#PWR02", "#PWR03", "#PWR04", "#PWR05", "#PWR08"],
+    "port_refs": [],
+    "lib_symbols": [
+        "JLCImport:LMZM23601SILR",
+        "JLCImport:0805W8F1002T5E",
+        "JLCImport:0805W8F2491T5E",
+        "JLCImport:GRM32ER7YA106KA12L",
+        "JLCImport:1206X476M160NT",
+        "power:+12V",
+        "power:+5V",
+        "power:GND"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "template": "esp32s3_core",
+    "description": "ESP32-S3-WROOM-1 N16R8 module with decoupling capacitors and signal ports",
+    "references": ["U2", "C1", "C2"],
+    "power_refs": ["#PWR01", "#PWR02", "#PWR03", "#PWR04", "#PWR05", "#PWR06"],
+    "port_refs": ["#PORT01", "#PORT02", "#PORT03", "#PORT04", "#PORT05"],
+    "lib_symbols": [
+        "JLCImport:ESP32-S3-WROOM-1_N16R8",
+        "JLCImport:CL21A106KAYNNNE",
+        "JLCImport:CC0805KRX7R9BB104",
+        "Ports:Enable",
+        "Ports:TX",
+        "Ports:RX",
+        "Ports:UD-",
+        "Ports:UD+",
+        "power:+3.3V",
+        "power:GND"
+    ]
+}

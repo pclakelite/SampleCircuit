@@ -1,0 +1,19 @@
+{
+    "template": "psu_lmzm23601_3v3",
+    "description": "LMZM23601SILR 12V-to-3.3V buck regulator with Schottky diode, feedback divider and decoupling",
+    "references": ["U5", "R31", "R32", "C11", "C34", "C35", "D8"],
+    "power_refs": ["#PWR01", "#PWR02", "#PWR03", "#PWR04", "#PWR05", "#PWR06", "#PWR08"],
+    "port_refs": [],
+    "lib_symbols": [
+        "JLCImport:LMZM23601SILR",
+        "JLCImport:0805W8F1002T5E",
+        "JLCImport:0805W8F4221T5E",
+        "JLCImport:GRM32ER7YA106KA12L",
+        "JLCImport:GRM32EC81C476KE15L",
+        "JLCImport:EEEFT1V681UP",
+        "JLCImport:PMEG6030EVPX",
+        "power:+12V",
+        "power:+3.3V",
+        "power:GND"
+    ]
+}
