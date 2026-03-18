@@ -82,7 +82,7 @@
 			)
 		)
 		(symbol "SCL_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -182,7 +182,7 @@
 			)
 		)
 		(symbol "SDA_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -282,7 +282,7 @@
 			)
 		)
 		(symbol "DIN_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -382,7 +382,7 @@
 			)
 		)
 		(symbol "BCLK_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -482,7 +482,7 @@
 			)
 		)
 		(symbol "LRCLK_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -582,7 +582,7 @@
 			)
 		)
 		(symbol "OUTP_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -682,7 +682,7 @@
 			)
 		)
 		(symbol "OUTN_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -782,7 +782,7 @@
 			)
 		)
 		(symbol "CS_SD_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -882,7 +882,7 @@
 			)
 		)
 		(symbol "SD_CLK_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -982,7 +982,7 @@
 			)
 		)
 		(symbol "SD_MOSI_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -1082,7 +1082,7 @@
 			)
 		)
 		(symbol "SD_MISO_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -1182,7 +1182,7 @@
 			)
 		)
 		(symbol "Enable_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -1282,7 +1282,7 @@
 			)
 		)
 		(symbol "TX_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -1382,7 +1382,7 @@
 			)
 		)
 		(symbol "RX_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -1482,7 +1482,7 @@
 			)
 		)
 		(symbol "RS485_DE_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -1582,7 +1582,7 @@
 			)
 		)
 		(symbol "RS485_A_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -1682,7 +1682,7 @@
 			)
 		)
 		(symbol "RS485_B_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -1782,7 +1782,7 @@
 			)
 		)
 		(symbol "UD+_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -1882,7 +1882,7 @@
 			)
 		)
 		(symbol "UD-_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -1982,7 +1982,7 @@
 			)
 		)
 		(symbol "KEY_ADC_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -2082,7 +2082,7 @@
 			)
 		)
 		(symbol "DATA_433_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -2182,7 +2182,7 @@
 			)
 		)
 		(symbol "AMP_EN_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -2282,7 +2282,7 @@
 			)
 		)
 		(symbol "LED+_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
@@ -2382,7 +2382,7 @@
 			)
 		)
 		(symbol "CS_FLASH_1_1"
-			(pin passive line
+			(pin power_in line
 				(at 2.54 0 0)
 				(length 0)
 				(name "~"
