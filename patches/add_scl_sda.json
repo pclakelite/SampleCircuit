@@ -1,0 +1,12 @@
+{
+    "remove_elements": [
+        {"type": "no_connect", "at": [110.49, 134.62]},
+        {"type": "no_connect", "at": [110.49, 137.16]}
+    ],
+    "add_elements": [
+        "(symbol\n    (lib_id \"Ports:SCL\")\n    (at 118.11 134.62 180)\n    (unit 1)\n    (exclude_from_sim no)\n    (in_bom no)\n    (on_board no)\n    (dnp no)\n    (uuid \"a1b2c3d4-1111-4aaa-bbbb-cc1122334455\")\n    (property \"Reference\" \"#PORT0114\"\n      (at 118.11 137.16 0)\n      (effects (font (size 1.27 1.27)) hide)\n    )\n    (property \"Value\" \"SCL\"\n      (at 120.01 134.62 0)\n      (effects (font (size 1.27 1.27)))\n    )\n    (property \"Footprint\" \"\"\n      (at 118.11 134.62 0)\n      (effects (font (size 1.27 1.27)) hide)\n    )\n    (instances\n      (project \"SampleCircuit\"\n        (path \"/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7\"\n          (reference \"#PORT0114\")\n          (unit 1)\n        )\n      )\n    )\n  )",
+        "(wire (pts (xy 110.49 134.62) (xy 115.57 134.62))\n    (stroke (width 0) (type default))\n    (uuid \"a1b2c3d4-2222-4aaa-bbbb-cc1122334455\")\n  )",
+        "(symbol\n    (lib_id \"Ports:SDA\")\n    (at 118.11 137.16 180)\n    (unit 1)\n    (exclude_from_sim no)\n    (in_bom no)\n    (on_board no)\n    (dnp no)\n    (uuid \"a1b2c3d4-3333-4aaa-bbbb-cc1122334455\")\n    (property \"Reference\" \"#PORT0115\"\n      (at 118.11 139.7 0)\n      (effects (font (size 1.27 1.27)) hide)\n    )\n    (property \"Value\" \"SDA\"\n      (at 120.01 137.16 0)\n      (effects (font (size 1.27 1.27)))\n    )\n    (property \"Footprint\" \"\"\n      (at 118.11 137.16 0)\n      (effects (font (size 1.27 1.27)) hide)\n    )\n    (instances\n      (project \"SampleCircuit\"\n        (path \"/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7\"\n          (reference \"#PORT0115\")\n          (unit 1)\n        )\n      )\n    )\n  )",
+        "(wire (pts (xy 110.49 137.16) (xy 115.57 137.16))\n    (stroke (width 0) (type default))\n    (uuid \"a1b2c3d4-4444-4aaa-bbbb-cc1122334455\")\n  )"
+    ]
+}

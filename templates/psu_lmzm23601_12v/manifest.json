@@ -1,8 +1,8 @@
 {
     "template": "psu_lmzm23601_12v",
-    "description": "LMZM23601SILR 24V-to-12V buck regulator with feedback divider and decoupling",
-    "references": ["U1", "R1", "R2", "C1", "C2", "C3"],
-    "power_refs": ["#PWR01", "#PWR02", "#PWR03", "#PWR04", "#PWR05", "#PWR08"],
+    "description": "LMZM23601SILR 24V-to-12V buck regulator with feedback divider, decoupling, and input protection",
+    "references": ["U1", "R1", "R2", "C1", "C2", "C3", "D1", "D2"],
+    "power_refs": ["#PWR01", "#PWR02", "#PWR03", "#PWR04", "#PWR05", "#PWR06", "#PWR08"],
     "port_refs": [],
     "lib_symbols": [
         "JLCImport:LMZM23601SILR",
@@ -10,6 +10,8 @@
         "JLCImport:0805W8F1002T5E",
         "JLCImport:GRM32ER7YA106KA12L",
         "JLCImport:1206X476M160NT",
+        "JLCImport:SS34_C8678",
+        "JLCImport:SMBJ26CA_C89651",
         "power:+24V",
         "power:+12V",
         "power:GND"

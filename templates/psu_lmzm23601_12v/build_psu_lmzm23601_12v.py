@@ -9,6 +9,10 @@ Cloned from psu_lmzm23601_5v with:
   - R2: 10k  (was 2.49k) — feedback lower
   - Vout = 1.0 * (1 + 110k/10k) = 12.0V
 
+Input protection:
+  - D1: SS34 Schottky in series for reverse polarity protection
+  - D2: SMBJ26CA bidirectional TVS across VIN and GND for transient suppression
+
 Run: python build_psu_lmzm23601_12v.py
 """
 
@@ -92,8 +96,20 @@ C3_X, C3_Y = 167.64, 124.46
 C3_P1 = (C3_X, round(C3_Y - 5.08, 2))
 C3_P2 = (C3_X, round(C3_Y + 5.08, 2))
 
+# D1 — SS34 Schottky (series reverse polarity protection, angle=270 vertical)
+# Current flows: +24V (top) → anode (top) → cathode (bottom) → VIN rail
+D1_X, D1_Y = 102.87, 93.98
+D1_P2_A = (D1_X, round(D1_Y - 5.08, 2))   # Anode at (102.87, 88.9) — +24V side
+D1_P1_K = (D1_X, round(D1_Y + 5.08, 2))   # Cathode at (102.87, 99.06) — VIN side
+
+# D2 — SMBJ26CA TVS (transient suppression, angle=270 vertical)
+# Placed to the left of input caps, between VIN rail and GND
+D2_X, D2_Y = 96.52, 109.22
+D2_P2_A = (D2_X, round(D2_Y - 5.08, 2))   # Pin 2 at (96.52, 104.14) — VIN side
+D2_P1_K = (D2_X, round(D2_Y + 5.08, 2))   # Pin 1 at (96.52, 114.3) — GND side
+
 # Power symbols
-V24_X, V24_Y = 102.87, 99.06       # +24V input (was +12V)
+V24_X, V24_Y = 102.87, 88.9        # +24V input (moved up for D1)
 V12_X, V12_Y = 170.18, 100.33      # +12V output (was +5V)
 
 # GND symbols
@@ -103,6 +119,7 @@ GND_IC1_ANGLE = 270
 GND_EP_X, GND_EP_Y = 173.99, 93.98
 GND_EP_ANGLE = 90
 GND_OUT_X, GND_OUT_Y = 175.26, 132.08
+GND_D2_X, GND_D2_Y = 96.52, 116.84    # GND for TVS diode
 
 # Wire routing intermediate points
 VIN_RAIL_Y = 102.87
@@ -148,6 +165,8 @@ def read_lib_symbols():
         ("0805W8F1002T5E", True),        # 10k resistor (lower feedback)
         ("GRM32ER7YA106KA12L", True),    # 10uF 35V cap
         ("1206X476M160NT", True),        # 47uF 16V cap
+        ("SS34_C8678", True),            # Schottky diode (reverse polarity)
+        ("SMBJ26CA_C89651", True),       # TVS diode (transient suppression)
     ]
 
     with open(jlc_path, 'r', encoding='utf-8') as f:
@@ -500,10 +519,22 @@ def build_schematic():
         footprint="JLCImport:1206X476M160NT", lcsc="C172351",
         ref_offset=(-3.81, 0), val_offset=(3.81, 0)))
 
+    # D1 — SS34 Schottky (series reverse polarity, vertical angle=270)
+    symbols.append(make_component("D1", "JLCImport:SS34_C8678",
+        D1_X, D1_Y, "SS34", angle=270,
+        footprint="JLCImport:SS34_C8678", lcsc="C8678",
+        ref_offset=(3.81, 0), val_offset=(-3.81, 0)))
+
+    # D2 — SMBJ26CA TVS (transient suppression, vertical angle=270)
+    symbols.append(make_component("D2", "JLCImport:SMBJ26CA_C89651",
+        D2_X, D2_Y, "SMBJ26CA", angle=270,
+        footprint="JLCImport:SMBJ26CA_C89651", lcsc="C89651",
+        ref_offset=(3.81, 0), val_offset=(-3.81, 0)))
+
     # Power symbols — +24V input, +12V output
     symbols.append(make_power("#PWR01", "power:+24V", "+24V", V24_X, V24_Y,
                                ref_pos=(V24_X, round(V24_Y + 3.81, 2)),
-                               val_pos=(102.362, 94.742)))
+                               val_pos=(V24_X, round(V24_Y - 4.32, 2))))
     symbols.append(make_power("#PWR08", "power:+12V", "+12V", V12_X, V12_Y,
                                ref_pos=(V12_X, round(V12_Y + 3.81, 2)),
                                val_pos=(V12_X, 96.77)))
@@ -523,6 +554,9 @@ def build_schematic():
     symbols.append(make_power("#PWR05", "power:GND", "GND", GND_OUT_X, GND_OUT_Y,
                                ref_pos=(GND_OUT_X, round(GND_OUT_Y + 6.35, 2)),
                                val_pos=(GND_OUT_X, 135.89)))
+    symbols.append(make_power("#PWR06", "power:GND", "GND", GND_D2_X, GND_D2_Y,
+                               ref_pos=(GND_D2_X, round(GND_D2_Y + 6.35, 2)),
+                               val_pos=(GND_D2_X, round(GND_D2_Y + 3.81, 2))))
 
     symbols_str = "\n\n".join(symbols)
 
@@ -553,9 +587,16 @@ def build_schematic():
 
     wires = []
 
-    # --- Input power: +24V → VIN rail → IC ---
+    # --- Input power: +24V → D1 (Schottky) → VIN rail → IC ---
+    # +24V symbol at (102.87, 88.9) connects directly to D1 anode at same point
+    # D1 cathode at (102.87, 99.06) → VIN rail at (102.87, 102.87)
     wires.append(wire(102.87, 99.06, 102.87, 102.87))
     wires.append(wire(102.87, 102.87, 105.41, 102.87))
+
+    # --- D2 (TVS) connections: VIN rail → D2 anode, D2 cathode → GND ---
+    wires.append(wire(96.52, 102.87, 96.52, 104.14))    # vertical to D2 pin 2
+    wires.append(wire(96.52, 102.87, 102.87, 102.87))   # horizontal to VIN rail
+    wires.append(wire(96.52, 114.3, 96.52, 116.84))     # D2 pin 1 to GND symbol
     wires.append(wire(105.41, 106.68, 105.41, 102.87))
     wires.append(wire(105.41, 102.87, 116.84, 102.87))
     wires.append(wire(116.84, 104.14, 116.84, 102.87))
@@ -603,6 +644,7 @@ def build_schematic():
     # JUNCTIONS
     # ============================================================
     junction_points = [
+        (102.87, 102.87),   # D1/D2/VIN rail T-junction
         (105.41, 102.87),
         (116.84, 102.87),
         (135.89, 102.87),
@@ -667,6 +709,7 @@ if __name__ == "__main__":
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(content)
     print(f"Written: {output_path}")
-    print(f"Components: U1, R1, R2, C1, C2, C3")
-    print(f"Power symbols: +24V, +12V, 4x GND")
+    print(f"Components: U1, R1, R2, C1, C2, C3, D1 (SS34), D2 (SMBJ26CA)")
+    print(f"Power symbols: +24V, +12V, 5x GND")
     print(f"Feedback: Vout = 1.0 * (1 + 110k/10k) = 12.0V")
+    print(f"Input protection: D1 reverse polarity, D2 TVS transient")

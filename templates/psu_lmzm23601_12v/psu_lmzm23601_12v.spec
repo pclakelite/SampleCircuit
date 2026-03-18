@@ -42,6 +42,11 @@
 # - Feedback divider: R1 (110k top) / R2 (10k bottom) → 12.0V out
 # - Two 10uF 35V input caps (C1, C2) in parallel for decoupling
 # - One 47uF 16V output cap (C3) for output filtering
+# - D1 (SS34): Series Schottky diode for reverse polarity protection.
+#   3A 40V, ~0.45V drop at 1A. Blocks reverse-connected supply.
+# - D2 (SMBJ26CA): Bidirectional TVS diode across VIN rail and GND.
+#   26V standoff, 28.9V breakdown, 42.1V clamping at peak pulse.
+#   Protects against input transients/spikes.
 # - NOTE: JLCImport pin numbering for LMZM23601SILR differs from datasheet.
 #   Use pin NAMES (VIN, VOUT, FB, etc.) not numbers for wiring reference.
 
@@ -51,7 +56,9 @@
 # =============================================================================
 # Net Name    | Path
 # ------------|----------------------------------------------------
-# VIN_RAIL    | +24V → C1.pin2 → C2.pin2 → U1.VIN, U1.EN
+# VIN_PROT    | +24V → D1.anode → D1.cathode → VIN_RAIL
+# VIN_RAIL    | D1.cathode → D2.anode → C1.pin2 → C2.pin2 → U1.VIN, U1.EN
+#             | D2.cathode → GND (TVS clamping path)
 # FB_DIV      | U1.FB → R1.pin2 / R2 junction
 #             | R1.pin1 → VOUT rail (+12V)
 #             | R2.pin2 → GND
@@ -95,6 +102,18 @@
 #   Symbol:    JLCImport:1206X476M160NT
 #   Package:   1206
 
+# [D1] SS34 Schottky Diode — Reverse polarity protection (series)
+#   LCSC:      C8678
+#   Symbol:    JLCImport:SS34_C8678
+#   Package:   SMA
+#   Specs:     3A, 40V, ~0.45V Vf at 1A
+
+# [D2] SMBJ26CA TVS Diode — Transient voltage suppression (across VIN/GND)
+#   LCSC:      C89651
+#   Symbol:    JLCImport:SMBJ26CA_C89651
+#   Package:   SMB
+#   Specs:     26V standoff, 42.1V clamping, 600W peak pulse
+
 
 # =============================================================================
 # 6. JLCPCB BOM SUMMARY
@@ -108,14 +127,18 @@
 # R1   | 0805W8F1104T5E   | 110k 1%       | 0805   | C17436   | Basic
 # R2   | 0805W8F1002T5E   | 10k 1%        | 0805   | C17414   | Basic
 # C3   | 1206X476M160NT   | 47uF 16V      | 1206   | C172351  | Extended
+# D1   | SS34_C8678       | SS34 3A 40V   | SMA    | C8678    | Basic
+# D2   | SMBJ26CA_C89651  | SMBJ26CA 26V  | SMB    | C89651   | Extended
 #
-# Total: 6 components (2 basic, 4 extended)
+# Total: 8 components (3 basic, 5 extended)
 
 
 # =============================================================================
 # 7. VERIFICATION CHECKLIST
 # =============================================================================
-# [ ] +24V → VIN rail
+# [ ] +24V → D1 anode (SS34 Schottky)
+# [ ] D1 cathode → VIN rail (reverse polarity protection)
+# [ ] D2 (SMBJ26CA) across VIN rail and GND (TVS transient protection)
 # [ ] C1 (10uF) between VIN rail and GND
 # [ ] C2 (10uF) between VIN rail and GND
 # [ ] U1.VIN connected to VIN rail

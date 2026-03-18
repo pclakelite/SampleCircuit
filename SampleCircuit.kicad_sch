@@ -12690,6 +12690,169 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "JLCImport:TS665WS_C2686403"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 2 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TS665WS_C2686403"
+				(at 0 -2 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "JLCImport:TS665WS_C2686403"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/294145.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "TS665WS; KEY-SMD_L6.0-W6.0-LS6.6; SHOU HAN"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C2686403"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "SHOU HAN"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part" "TS665WS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "C2686403 KEY-SMD_L6.0-W6.0-LS6.6 SHOU HAN TS665WS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TS665WS_C2686403_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 1.524) (xy -2.032 0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "JLCImport:WJ500V-5_08-2P-14-00A"
 			(pin_names
 				(offset 1.016)
@@ -13648,6 +13811,107 @@
 				)
 			)
 			(symbol "BCLK_1_1"
+				(pin power_in line
+					(at 2.54 0 0)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Ports:BOOT"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "#PORT"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "BOOT"
+				(at -1.905 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Signal port creates a global label with name BOOT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global signal port"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BOOT_0_1"
+				(polyline
+					(pts
+						(xy -5.08 -1.27) (xy -6.35 0) (xy -5.08 1.27) (xy 1.27 1.27) (xy 2.54 0) (xy 1.27 -1.27) (xy -5.08 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "BOOT_1_1"
 				(pin power_in line
 					(at 2.54 0 0)
 					(length 0)
@@ -16089,10 +16353,6 @@
 		(uuid "fd736858-10d0-4b77-a8e9-e2acaffad4b7")
 	)
 	(no_connect
-		(at 110.49 165.1)
-		(uuid "0091032c-5a6e-4734-b200-7e6ad3b7ba46")
-	)
-	(no_connect
 		(at 81.28 179.07)
 		(uuid "0cb9065e-959f-46fa-9f19-cf95f23e92e8")
 	)
@@ -16125,10 +16385,6 @@
 		(uuid "2d8ea6a5-58ba-4fea-a14f-80351660dde4")
 	)
 	(no_connect
-		(at 110.49 134.62)
-		(uuid "45f837b7-ad46-409b-9e11-d258febbd611")
-	)
-	(no_connect
 		(at 110.49 152.4)
 		(uuid "4724facf-ba47-42c4-9d24-7f75fa442331")
 	)
@@ -16143,10 +16399,6 @@
 	(no_connect
 		(at 76.2 179.07)
 		(uuid "5af9dbf7-6dff-470b-80f6-abc9b217f838")
-	)
-	(no_connect
-		(at 110.49 137.16)
-		(uuid "5e34cee1-ed65-42c0-ada1-97a20322b785")
 	)
 	(no_connect
 		(at 153.67 220.98)
@@ -16262,7 +16514,7 @@
 	)
 	(wire
 		(pts
-			(xy 289.56 154.94) (xy 289.56 156.21)
+			(xy 288.29 176.53) (xy 288.29 177.8)
 		)
 		(stroke
 			(width 0)
@@ -16292,7 +16544,7 @@
 	)
 	(wire
 		(pts
-			(xy 293.37 154.94) (xy 293.37 151.13)
+			(xy 292.1 176.53) (xy 292.1 172.72)
 		)
 		(stroke
 			(width 0)
@@ -16312,7 +16564,7 @@
 	)
 	(wire
 		(pts
-			(xy 354.33 195.58) (xy 354.33 198.12)
+			(xy 337.82 182.88) (xy 337.82 185.42)
 		)
 		(stroke
 			(width 0)
@@ -16742,7 +16994,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 151.13) (xy 309.88 156.21)
+			(xy 306.07 172.72) (xy 306.07 177.8)
 		)
 		(stroke
 			(width 0)
@@ -16782,7 +17034,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 149.86) (xy 274.32 154.94)
+			(xy 278.13 172.72) (xy 278.13 177.8)
 		)
 		(stroke
 			(width 0)
@@ -16942,7 +17194,7 @@
 	)
 	(wire
 		(pts
-			(xy 334.01 161.36) (xy 334.01 166.44)
+			(xy 325.12 172.72) (xy 325.12 177.8)
 		)
 		(stroke
 			(width 0)
@@ -17082,7 +17334,7 @@
 	)
 	(wire
 		(pts
-			(xy 289.56 154.94) (xy 293.37 154.94)
+			(xy 288.29 176.53) (xy 292.1 176.53)
 		)
 		(stroke
 			(width 0)
@@ -17132,7 +17384,7 @@
 	)
 	(wire
 		(pts
-			(xy 295.91 151.13) (xy 295.91 156.21)
+			(xy 294.64 172.72) (xy 294.64 177.8)
 		)
 		(stroke
 			(width 0)
@@ -17142,7 +17394,7 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 149.86) (xy 271.78 154.94)
+			(xy 275.59 172.72) (xy 275.59 177.8)
 		)
 		(stroke
 			(width 0)
@@ -17192,7 +17444,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 151.13) (xy 312.42 156.21)
+			(xy 308.61 172.72) (xy 308.61 177.8)
 		)
 		(stroke
 			(width 0)
@@ -17352,7 +17604,7 @@
 	)
 	(wire
 		(pts
-			(xy 369.57 190.5) (xy 369.57 193.04)
+			(xy 353.06 177.8) (xy 353.06 180.34)
 		)
 		(stroke
 			(width 0)
@@ -17402,7 +17654,7 @@
 	)
 	(wire
 		(pts
-			(xy 359.41 190.5) (xy 369.57 190.5)
+			(xy 342.9 177.8) (xy 353.06 177.8)
 		)
 		(stroke
 			(width 0)
@@ -17412,7 +17664,27 @@
 	)
 	(wire
 		(pts
-			(xy 356.87 195.58) (xy 356.87 185.42)
+			(xy 110.49 134.62) (xy 123.19 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1b2c3d4-2222-4aaa-bbbb-cc1122334455")
+	)
+	(wire
+		(pts
+			(xy 110.49 137.16) (xy 123.19 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1b2c3d4-4444-4aaa-bbbb-cc1122334455")
+	)
+	(wire
+		(pts
+			(xy 340.36 182.88) (xy 340.36 172.72)
 		)
 		(stroke
 			(width 0)
@@ -17539,6 +17811,36 @@
 			(type default)
 		)
 		(uuid "b0b1eeb5-6cba-46d6-ac2e-8d31251b1b0a")
+	)
+	(wire
+		(pts
+			(xy 54.61 177.8) (xy 59.69 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1b2c3d4-1004-4aaa-bbbb-ee1122334455")
+	)
+	(wire
+		(pts
+			(xy 54.61 185.42) (xy 59.69 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1b2c3d4-2004-4aaa-bbbb-ee1122334455")
+	)
+	(wire
+		(pts
+			(xy 110.49 165.1) (xy 115.57 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1b2c3d4-3002-4aaa-bbbb-ee1122334455")
 	)
 	(wire
 		(pts
@@ -17672,7 +17974,7 @@
 	)
 	(wire
 		(pts
-			(xy 359.41 185.42) (xy 359.41 190.5)
+			(xy 342.9 172.72) (xy 342.9 177.8)
 		)
 		(stroke
 			(width 0)
@@ -18052,7 +18354,7 @@
 	)
 	(wire
 		(pts
-			(xy 331.47 161.36) (xy 331.47 166.44)
+			(xy 322.58 172.72) (xy 322.58 177.8)
 		)
 		(stroke
 			(width 0)
@@ -18282,7 +18584,7 @@
 	)
 	(wire
 		(pts
-			(xy 354.33 195.58) (xy 356.87 195.58)
+			(xy 337.82 182.88) (xy 340.36 182.88)
 		)
 		(stroke
 			(width 0)
@@ -20017,7 +20319,7 @@
 	)
 	(symbol
 		(lib_id "JLCImport:WJ500V-5_08-2P-14-00A")
-		(at 294.64 146.05 0)
+		(at 293.37 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20025,7 +20327,7 @@
 		(dnp no)
 		(uuid "2c1ffe03-a9f9-4b67-a121-cf83f6f44acd")
 		(property "Reference" "J2"
-			(at 294.64 137.16 0)
+			(at 293.37 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20033,7 +20335,7 @@
 			)
 		)
 		(property "Value" "12V TEST"
-			(at 294.64 139.192 0)
+			(at 293.37 160.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20041,7 +20343,7 @@
 			)
 		)
 		(property "Footprint" "JLCImport:WJ500V-5_08-2P-14-00A"
-			(at 294.64 146.05 0)
+			(at 293.37 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20050,7 +20352,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 294.64 146.05 0)
+			(at 293.37 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20058,7 +20360,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 294.64 146.05 0)
+			(at 293.37 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20066,7 +20368,7 @@
 			)
 		)
 		(property "LCSC" "C8465"
-			(at 294.64 146.05 0)
+			(at 293.37 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20370,7 +20672,7 @@
 	)
 	(symbol
 		(lib_id "Ports:OUTP")
-		(at 369.57 195.58 90)
+		(at 353.06 182.88 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20378,7 +20680,7 @@
 		(dnp no)
 		(uuid "369c18c3-aeca-4418-abf4-663e827682d1")
 		(property "Reference" "#PORT41"
-			(at 369.57 195.58 0)
+			(at 353.06 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20387,7 +20689,7 @@
 			)
 		)
 		(property "Value" "OUTP"
-			(at 369.316 197.612 0)
+			(at 352.806 184.912 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20395,7 +20697,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 369.57 195.58 0)
+			(at 353.06 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20404,7 +20706,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 369.57 195.58 0)
+			(at 353.06 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20412,7 +20714,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 369.57 195.58 0)
+			(at 353.06 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21370,7 +21672,7 @@
 	)
 	(symbol
 		(lib_id "JLCImport:WJ500V-5_08-2P-14-00A")
-		(at 311.15 146.05 0)
+		(at 307.34 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21378,7 +21680,7 @@
 		(dnp no)
 		(uuid "4bded92a-4478-4600-b08f-14a04a6c36f7")
 		(property "Reference" "J3"
-			(at 310.642 136.944 0)
+			(at 306.832 158.534 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21386,7 +21688,7 @@
 			)
 		)
 		(property "Value" "5V TEST"
-			(at 311.15 139.484 0)
+			(at 307.34 161.074 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21394,7 +21696,7 @@
 			)
 		)
 		(property "Footprint" "JLCImport:WJ500V-5_08-2P-14-00A"
-			(at 311.15 146.05 0)
+			(at 307.34 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21403,7 +21705,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 311.15 146.05 0)
+			(at 307.34 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21411,7 +21713,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 311.15 146.05 0)
+			(at 307.34 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21419,7 +21721,7 @@
 			)
 		)
 		(property "LCSC" "C8465"
-			(at 311.15 146.05 0)
+			(at 307.34 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21722,7 +22024,7 @@
 	(symbol
 		(lib_name "GND_2")
 		(lib_id "power:GND")
-		(at 334.01 166.44 0)
+		(at 325.12 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21730,7 +22032,7 @@
 		(dnp no)
 		(uuid "510852f9-722f-4e68-be34-f8655a93eadb")
 		(property "Reference" "#PWR78"
-			(at 334.01 172.79 0)
+			(at 325.12 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21739,7 +22041,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 337.058 169.164 0)
+			(at 328.168 180.524 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21747,7 +22049,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 334.01 166.44 0)
+			(at 325.12 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21756,7 +22058,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 334.01 166.44 0)
+			(at 325.12 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21764,7 +22066,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 334.01 166.44 0)
+			(at 325.12 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21920,7 +22222,7 @@
 	(symbol
 		(lib_name "+3.3V_2")
 		(lib_id "power:+3.3V")
-		(at 331.47 166.44 180)
+		(at 322.58 177.8 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21928,7 +22230,7 @@
 		(dnp no)
 		(uuid "5956bd85-d79b-45bd-be62-d9cc9fb49f86")
 		(property "Reference" "#PWR77"
-			(at 331.47 170.25 0)
+			(at 322.58 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21937,7 +22239,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 328.168 170.18 0)
+			(at 318.008 179.762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21945,7 +22247,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 331.47 166.44 0)
+			(at 322.58 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21954,7 +22256,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 331.47 166.44 0)
+			(at 322.58 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21962,7 +22264,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 331.47 166.44 0)
+			(at 322.58 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22410,7 +22712,7 @@
 	)
 	(symbol
 		(lib_id "JLCImport:WJ500V-5_08-2P-14-00A")
-		(at 273.05 144.78 0)
+		(at 276.86 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22418,7 +22720,7 @@
 		(dnp no)
 		(uuid "657c4276-f334-48b0-a9ed-0b0b933d626f")
 		(property "Reference" "J1"
-			(at 273.05 135.89 0)
+			(at 276.86 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22426,7 +22728,7 @@
 			)
 		)
 		(property "Value" "24V INPUT"
-			(at 273.05 138.176 0)
+			(at 276.86 161.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22434,7 +22736,7 @@
 			)
 		)
 		(property "Footprint" "JLCImport:WJ500V-5_08-2P-14-00A"
-			(at 273.05 144.78 0)
+			(at 276.86 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22443,7 +22745,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 273.05 144.78 0)
+			(at 276.86 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22451,7 +22753,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 273.05 144.78 0)
+			(at 276.86 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22459,7 +22761,7 @@
 			)
 		)
 		(property "LCSC" "C8465"
-			(at 273.05 144.78 0)
+			(at 276.86 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22559,7 +22861,7 @@
 	(symbol
 		(lib_name "+24V_1")
 		(lib_id "power:+24V")
-		(at 271.78 154.94 180)
+		(at 275.59 177.8 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22567,7 +22869,7 @@
 		(dnp no)
 		(uuid "6b9a8683-3415-4dba-9b99-93b53e401221")
 		(property "Reference" "#PWR71"
-			(at 271.78 158.75 0)
+			(at 275.59 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22576,7 +22878,7 @@
 			)
 		)
 		(property "Value" "+24V"
-			(at 267.462 156.464 0)
+			(at 271.272 179.324 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22584,7 +22886,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 271.78 154.94 0)
+			(at 275.59 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22593,7 +22895,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 271.78 154.94 0)
+			(at 275.59 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22601,7 +22903,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 271.78 154.94 0)
+			(at 275.59 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22843,7 +23145,7 @@
 	(symbol
 		(lib_name "+12V_1")
 		(lib_id "power:+12V")
-		(at 289.56 156.21 180)
+		(at 288.29 177.8 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22851,7 +23153,7 @@
 		(dnp no)
 		(uuid "7c968ac3-c395-44e6-857f-44fdd9915928")
 		(property "Reference" "#PWR73"
-			(at 289.56 160.02 0)
+			(at 288.29 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22860,7 +23162,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 289.56 159.77 0)
+			(at 288.29 181.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22868,7 +23170,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 289.56 156.21 0)
+			(at 288.29 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22877,7 +23179,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 289.56 156.21 0)
+			(at 288.29 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22885,7 +23187,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 289.56 156.21 0)
+			(at 288.29 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23234,7 +23536,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 295.91 156.21 0)
+		(at 294.64 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23242,7 +23544,7 @@
 		(dnp no)
 		(uuid "85d5ea2a-47ed-40cd-a678-833f9f5cb4d3")
 		(property "Reference" "#PWR74"
-			(at 295.91 162.56 0)
+			(at 294.64 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23251,7 +23553,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 295.656 160.02 0)
+			(at 294.386 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23259,7 +23561,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 295.91 156.21 0)
+			(at 294.64 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23268,7 +23570,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 295.91 156.21 0)
+			(at 294.64 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23276,7 +23578,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 295.91 156.21 0)
+			(at 294.64 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23436,7 +23738,7 @@
 	(symbol
 		(lib_name "GND_31")
 		(lib_id "power:GND")
-		(at 274.32 154.94 0)
+		(at 278.13 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23444,7 +23746,7 @@
 		(dnp no)
 		(uuid "8b298201-64c4-45d3-b825-04fcd6aa7139")
 		(property "Reference" "#PWR72"
-			(at 274.32 161.29 0)
+			(at 278.13 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23453,7 +23755,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 277.876 156.464 0)
+			(at 281.686 179.324 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23461,7 +23763,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 154.94 0)
+			(at 278.13 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23470,7 +23772,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 154.94 0)
+			(at 278.13 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23478,7 +23780,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 274.32 154.94 0)
+			(at 278.13 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23837,7 +24139,7 @@
 	)
 	(symbol
 		(lib_id "Ports:OUTN")
-		(at 354.33 200.66 90)
+		(at 337.82 187.96 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23845,7 +24147,7 @@
 		(dnp no)
 		(uuid "938b2708-cdb2-4078-9774-9b146fd197a1")
 		(property "Reference" "#PORT42"
-			(at 354.33 200.66 0)
+			(at 337.82 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23854,7 +24156,7 @@
 			)
 		)
 		(property "Value" "OUTN"
-			(at 354.33 202.438 0)
+			(at 337.82 189.738 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23862,7 +24164,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 354.33 200.66 0)
+			(at 337.82 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23871,7 +24173,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 354.33 200.66 0)
+			(at 337.82 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23879,7 +24181,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 354.33 200.66 0)
+			(at 337.82 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24911,6 +25213,132 @@
 		)
 	)
 	(symbol
+		(lib_id "Ports:SCL")
+		(at 125.73 134.62 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "a1b2c3d4-1111-4aaa-bbbb-cc1122334455")
+		(property "Reference" "#PORT0114"
+			(at 125.73 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SCL"
+			(at 127.63 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "982e0874-c229-4447-a034-0275655b15ef")
+		)
+		(instances
+			(project "SampleCircuit"
+				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+					(reference "#PORT0114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Ports:SDA")
+		(at 125.73 137.16 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "a1b2c3d4-3333-4aaa-bbbb-cc1122334455")
+		(property "Reference" "#PORT0115"
+			(at 125.73 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SDA"
+			(at 127.762 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e3d8a620-e0d8-41ba-b3f0-9e40065d2444")
+		)
+		(instances
+			(project "SampleCircuit"
+				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+					(reference "#PORT0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Ports:LRCLK")
 		(at 57.15 142.24 0)
 		(unit 1)
@@ -24976,7 +25404,7 @@
 	(symbol
 		(lib_name "GND_33")
 		(lib_id "power:GND")
-		(at 312.42 156.21 0)
+		(at 308.61 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24984,7 +25412,7 @@
 		(dnp no)
 		(uuid "a58bc259-0a23-4f83-915a-759359890829")
 		(property "Reference" "#PWR76"
-			(at 312.42 162.56 0)
+			(at 308.61 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24993,7 +25421,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 315.722 157.988 0)
+			(at 311.912 179.578 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25001,7 +25429,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 312.42 156.21 0)
+			(at 308.61 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25010,7 +25438,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 312.42 156.21 0)
+			(at 308.61 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25018,7 +25446,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 312.42 156.21 0)
+			(at 308.61 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25524,6 +25952,469 @@
 		)
 	)
 	(symbol
+		(lib_id "JLCImport:TS665WS_C2686403")
+		(at 49.53 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1b2c3d4-1001-4aaa-bbbb-ee1122334455")
+		(property "Reference" "SW1"
+			(at 49.53 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RESET"
+			(at 49.53 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCImport:TS665WS_C2686403"
+			(at 49.53 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2686403"
+			(at 49.53 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd7ddc52-5f11-40d7-be68-6c2131f6cbe6")
+		)
+		(pin "2"
+			(uuid "e309d656-a626-44b7-8451-9ccea26133bc")
+		)
+		(instances
+			(project "SampleCircuit"
+				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Ports:Enable")
+		(at 41.91 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "b1b2c3d4-1002-4aaa-bbbb-ee1122334455")
+		(property "Reference" "#PORT0116"
+			(at 41.91 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Enable"
+			(at 40 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 41.91 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3641367b-cc1d-40f5-ab1e-9cdb00c2950f")
+		)
+		(instances
+			(project "SampleCircuit"
+				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+					(reference "#PORT0116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 59.69 177.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1b2c3d4-1003-4aaa-bbbb-ee1122334455")
+		(property "Reference" "#PWR90"
+			(at 59.69 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 59.69 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1cb99184-c038-4cd3-8544-2eca1b2db724")
+		)
+		(instances
+			(project "SampleCircuit"
+				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+					(reference "#PWR90")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCImport:TS665WS_C2686403")
+		(at 49.53 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1b2c3d4-2001-4aaa-bbbb-ee1122334455")
+		(property "Reference" "SW2"
+			(at 49.53 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BOOT"
+			(at 49.53 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCImport:TS665WS_C2686403"
+			(at 49.53 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2686403"
+			(at 49.53 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfe22ea2-7d3b-4d06-b00a-6ce111f84414")
+		)
+		(pin "2"
+			(uuid "3c7267db-0f58-40e6-a5a3-82b2c239af44")
+		)
+		(instances
+			(project "SampleCircuit"
+				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Ports:BOOT")
+		(at 41.91 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "b1b2c3d4-2002-4aaa-bbbb-ee1122334455")
+		(property "Reference" "#PORT0117"
+			(at 41.91 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BOOT"
+			(at 40 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 41.91 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c0650f1d-d9bd-412d-a1c0-5bc633d4e8af")
+		)
+		(instances
+			(project "SampleCircuit"
+				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+					(reference "#PORT0117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 59.69 185.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1b2c3d4-2003-4aaa-bbbb-ee1122334455")
+		(property "Reference" "#PWR91"
+			(at 59.69 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 59.69 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5acf4d5b-5836-49bd-8365-1180a9bad03b")
+		)
+		(instances
+			(project "SampleCircuit"
+				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+					(reference "#PWR91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Ports:BOOT")
+		(at 118.11 165.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "b1b2c3d4-3001-4aaa-bbbb-ee1122334455")
+		(property "Reference" "#PORT0118"
+			(at 118.11 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "BOOT"
+			(at 120.01 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "df0db72e-8344-41c6-b9d7-b0c6c4c4e0d1")
+		)
+		(instances
+			(project "SampleCircuit"
+				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+					(reference "#PORT0118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "JLCImport:NS4168_C910588")
 		(at 182.88 120.65 0)
 		(unit 1)
@@ -25823,7 +26714,7 @@
 	(symbol
 		(lib_name "+5V_2")
 		(lib_id "power:+5V")
-		(at 309.88 156.21 180)
+		(at 306.07 177.8 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25831,7 +26722,7 @@
 		(dnp no)
 		(uuid "c4bde543-2780-4dff-ac17-f20c311ae5ab")
 		(property "Reference" "#PWR75"
-			(at 309.88 160.02 0)
+			(at 306.07 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25840,7 +26731,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 306.324 157.734 0)
+			(at 302.514 179.324 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25848,7 +26739,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 309.88 156.21 0)
+			(at 306.07 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25857,7 +26748,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 309.88 156.21 0)
+			(at 306.07 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25865,7 +26756,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 309.88 156.21 0)
+			(at 306.07 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26842,7 +27733,7 @@
 	)
 	(symbol
 		(lib_id "JLCImport:WJ500V-5_08-2P-14-00A")
-		(at 332.74 156.28 0)
+		(at 323.85 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26850,7 +27741,7 @@
 		(dnp no)
 		(uuid "db3c3768-3d5f-43a4-8367-fbb49d110376")
 		(property "Reference" "J4"
-			(at 332.74 147.574 0)
+			(at 323.85 158.934 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26858,7 +27749,7 @@
 			)
 		)
 		(property "Value" "3.3V TEST"
-			(at 332.994 149.86 0)
+			(at 324.104 161.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26866,7 +27757,7 @@
 			)
 		)
 		(property "Footprint" "JLCImport:WJ500V-5_08-2P-14-00A"
-			(at 332.74 156.28 0)
+			(at 323.85 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26875,7 +27766,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 332.74 156.28 0)
+			(at 323.85 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26883,7 +27774,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 332.74 156.28 0)
+			(at 323.85 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26891,7 +27782,7 @@
 			)
 		)
 		(property "LCSC" "C8465"
-			(at 332.74 156.28 0)
+			(at 323.85 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27414,7 +28305,7 @@
 	)
 	(symbol
 		(lib_id "JLCImport:WJ500V-5_08-2P-14-00A")
-		(at 358.14 180.34 0)
+		(at 341.63 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27422,7 +28313,7 @@
 		(dnp no)
 		(uuid "faa0080b-7534-4c48-b4e2-5d9fad4c6342")
 		(property "Reference" "J5"
-			(at 358.14 174.066 0)
+			(at 341.63 161.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27430,7 +28321,7 @@
 			)
 		)
 		(property "Value" "SPEAKER"
-			(at 358.14 189.23 0)
+			(at 341.63 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27438,7 +28329,7 @@
 			)
 		)
 		(property "Footprint" "JLCImport:WJ500V-5_08-2P-14-00A"
-			(at 358.14 180.34 0)
+			(at 341.63 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27447,7 +28338,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 358.14 180.34 0)
+			(at 341.63 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27455,7 +28346,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 358.14 180.34 0)
+			(at 341.63 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27463,7 +28354,7 @@
 			)
 		)
 		(property "LCSC" "C8465"
-			(at 358.14 180.34 0)
+			(at 341.63 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
