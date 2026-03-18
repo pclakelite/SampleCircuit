@@ -1,0 +1,14 @@
+{
+  "template": "rs485_sp3485",
+  "status": "review",
+  "reviewed": "no",
+  "reviewer_initials": "",
+  "reviewer_name": "",
+  "locked_by": "",
+  "locked_date": "",
+  "description": "SP3485EN RS-485 transceiver template, first-pass wired, awaiting human review.",
+  "changelog": [
+    {"date": "2026-03-06", "from": "new", "to": "draft", "by": "ai"},
+    {"date": "2026-03-06", "from": "draft", "to": "review", "by": "ai"}
+  ]
+}

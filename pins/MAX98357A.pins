@@ -1,0 +1,24 @@
+Pin Reference: MAX98357A (I2S DAC+Amplifier)
+================================================
+Library: Audio.kicad_sym
+Package: TQFN-16 (3x3mm)
+
+---------------------------------------------------------------------
+At angle=0:
+---------------------------------------------------------------------
+  Pin "1"  (DIN)       local=(-12.7, 7.62)   -> offset (-12.7, -7.62)
+  Pin "2"  (GAIN_SLOT) local=(-12.7, -5.08)  -> offset (-12.7, +5.08)
+  Pin "3"  (GND)       local=(-2.54, -12.7)  -> offset (-2.54, +12.7)
+  Pin "4"  (SD_MODE)   local=(-12.7, -2.54)  -> offset (-12.7, +2.54)
+  Pin "7"  (VDD)       local=(0, 12.7)        -> offset (0, -12.7)
+  Pin "9"  (OUTP)      local=(12.7, 7.62)     -> offset (12.7, -7.62)
+  Pin "10" (OUTN)      local=(12.7, 5.08)     -> offset (12.7, -5.08)
+  Pin "11" (GND)       local=(-2.54, -12.7)   -> offset (-2.54, +12.7)
+  Pin "14" (LRCLK)     local=(-12.7, 2.54)    -> offset (-12.7, -2.54)
+  Pin "15" (GND)       local=(-2.54, -12.7)   -> offset (-2.54, +12.7)
+  Pin "16" (BCLK)      local=(-12.7, 5.08)    -> offset (-12.7, -5.08)
+  Pin "17" (PAD)       local=(2.54, -12.7)     -> offset (2.54, +12.7)
+
+  GND pins: 3, 11, 15 (all at same offset), plus PAD (pin 17)
+  I2S inputs: DIN (1), BCLK (16), LRCLK (14) - all on left side
+  Audio outputs: OUTP (9), OUTN (10) - on right side

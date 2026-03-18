@@ -1,0 +1,15 @@
+{
+  "template": "receiver_433mhz",
+  "status": "review",
+  "reviewed": "no",
+  "reviewer_initials": "",
+  "reviewer_name": "",
+  "locked_by": "",
+  "locked_date": "",
+  "description": "SYN480R 433MHz ASK/OOK receiver with LC matching network and antenna. From simple-blower-V1.0 reference.",
+  "reference": "AIreference/SCH_simple-blower-V1.0_1-P1_2025-12-20 (1).pdf",
+  "changelog": [
+    {"date": "2026-03-07", "from": "new", "to": "draft", "by": "ai"},
+    {"date": "2026-03-07", "from": "draft", "to": "review", "by": "ai"}
+  ]
+}

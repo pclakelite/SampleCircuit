@@ -1,0 +1,31 @@
+{
+  "template": "supervisor_tlv803s",
+  "status": "locked",
+  "reviewed": "yes",
+  "reviewer_initials": "PB",
+  "reviewer_name": "Peter (human review in KiCad)",
+  "locked_by": "ai+human",
+  "locked_date": "2026-03-06",
+  "description": "Reviewed in KiCad, build script synced to reviewed geometry, locked",
+  "changelog": [
+    {
+      "date": "2026-03-06",
+      "from": "",
+      "to": "draft",
+      "by": "ai"
+    },
+    {
+      "date": "2026-03-06",
+      "from": "draft",
+      "to": "review",
+      "by": "ai"
+    },
+    {
+      "date": "2026-03-06",
+      "from": "review",
+      "to": "locked",
+      "by": "ai+human",
+      "notes": "FinalPass: human reviewed in KiCad, AI synced .py and .spec to match"
+    }
+  ]
+}

@@ -1,0 +1,1274 @@
+(kicad_sch
+  (version 20250114)
+  (generator "build_rs485_max485_template.py")
+  (generator_version "9.0")
+  (uuid "e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e")
+  (paper "A4")
+
+  (lib_symbols
+    (symbol "JLCImport:MAX485ESA_T"
+    (pin_names (offset 1.016))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U" (at 0 8.350013 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "MAX485ESA_T" (at 0 -8.350013 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:MAX485ESA_T" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://item.szlcsc.com/417287.html" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "MAX485ESA+T; SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL; ADI/MAXIM" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_keywords" "ADI/MAXIM C19738 MAX485ESA+T SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C19738" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "ADI/MAXIM" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part" "MAX485ESA+T" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "MAX485ESA_T_0_1"
+      (rectangle (start -5.08001 6.350013) (end 5.08001 -6.350013)
+        (stroke (width 0.254) (type solid))
+        (fill (type background))
+      )
+      (pin unspecified line (at -10.16002 3.810008 0) (length 5.08001)
+        (name "RO" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line (at -10.16002 1.270003 0) (length 5.08001)
+        (name "RE#" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line (at -10.16002 -1.270003 0) (length 5.08001)
+        (name "DE" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line (at -10.16002 -3.810008 0) (length 5.08001)
+        (name "DI" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line (at 10.16002 -3.810008 180) (length 5.08001)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line (at 10.16002 -1.270003 180) (length 5.08001)
+        (name "A" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line (at 10.16002 1.270003 180) (length 5.08001)
+        (name "B" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line (at 10.16002 3.810008 180) (length 5.08001)
+        (name "VCC" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+    (symbol "JLCImport:SS8050_C2150"
+    (pin_names (offset 1.016))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "Q" (at 0 7.08001 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SS8050_C2150" (at 0 -7.08001 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:SS8050_C2150" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.diodes.com/assets/Package-Files/SOT23.pdf" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "SS8050 Y1 200-350" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_keywords" "C2150 CJ(江苏长电/长晶) SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR SS8050(RANGE:200-350)" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C2150" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "CJ(江苏长电/长晶)" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part" "SS8050(RANGE:200-350)" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "SS8050_C2150_0_1"
+      (polyline
+        (pts (xy 0 2.540005) (xy -2.540005 0.762002))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy -2.540005 -0.762002) (xy 0 -2.540005))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy -2.540005 2.286005) (xy -2.540005 -2.286005))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy 0 -2.540005) (xy -0.762002 -1.270003) (xy -1.524003 -2.286005) (xy 0 -2.540005))
+        (stroke (width 0.254) (type solid))
+        (fill (type outline))
+      )
+      (pin unspecified line (at 0 5.08001 270) (length 2.540005)
+        (name "C" (effects (font (size 1.27 1.27)) hide))
+        (number "3" (effects (font (size 1.27 1.27)) hide))
+      )
+      (pin unspecified line (at -5.08001 0 0) (length 2.540005)
+        (name "B" (effects (font (size 1.27 1.27)) hide))
+        (number "1" (effects (font (size 1.27 1.27)) hide))
+      )
+      (pin unspecified line (at 0 -5.08001 90) (length 2.540005)
+        (name "E" (effects (font (size 1.27 1.27)) hide))
+        (number "2" (effects (font (size 1.27 1.27)) hide))
+      )
+    )
+  )
+    (symbol "JLCImport:0805W8F1001T5E"
+    (pin_names (offset 1.016) (hide yes))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "R" (at 0 3.016002 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "0805W8F1001T5E" (at 0 -3.016002 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:0805W8F1001T5E" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://item.szlcsc.com/142685.html" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "1KΩ (1001) ±1%" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_keywords" "0805W8F1001T5E C17513 R0805 UNI-ROYAL" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C17513" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "UNI-ROYAL" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part" "0805W8F1001T5E" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "0805W8F1001T5E_0_1"
+      (rectangle (start -2.540005 1.016002) (end 2.540005 -1.016002)
+        (stroke (width 0.254) (type solid))
+        (fill (type background))
+      )
+      (pin input line (at 5.08001 0 180) (length 2.540005)
+        (name "2" (effects (font (size 1.27 1.27)) hide))
+        (number "2" (effects (font (size 1.27 1.27)) hide))
+      )
+      (pin input line (at -5.08001 0 0) (length 2.540005)
+        (name "1" (effects (font (size 1.27 1.27)) hide))
+        (number "1" (effects (font (size 1.27 1.27)) hide))
+      )
+    )
+  )
+    (symbol "JLCImport:0805W8F4701T5E"
+    (pin_names (offset 1.016) (hide yes))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "R" (at 0 3.016002 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "0805W8F4701T5E" (at 0 -3.016002 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:0805W8F4701T5E" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://item.szlcsc.com/142685.html" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "4.7KΩ (4701) ±1%" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_keywords" "0805W8F4701T5E C17673 R0805 UNI-ROYAL" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C17673" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "UNI-ROYAL" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part" "0805W8F4701T5E" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "0805W8F4701T5E_0_1"
+      (rectangle (start -2.540005 1.016002) (end 2.540005 -1.016002)
+        (stroke (width 0.254) (type solid))
+        (fill (type background))
+      )
+      (pin input line (at 5.08001 0 180) (length 2.540005)
+        (name "2" (effects (font (size 1.27 1.27)) hide))
+        (number "2" (effects (font (size 1.27 1.27)) hide))
+      )
+      (pin input line (at -5.08001 0 0) (length 2.540005)
+        (name "1" (effects (font (size 1.27 1.27)) hide))
+        (number "1" (effects (font (size 1.27 1.27)) hide))
+      )
+    )
+  )
+    (symbol "JLCImport:CC0805KRX7R9BB104"
+    (pin_names (offset 1.016) (hide yes))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "C" (at 0 2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "CC0805KRX7R9BB104" (at 0 -2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:CC0805KRX7R9BB104" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://item.szlcsc.com/373011.html" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "100nF(104) ±10% 50V" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_keywords" "C0805 C49678 CC0805KRX7R9BB104 YAGEO" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C49678" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "YAGEO" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part" "CC0805KRX7R9BB104" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "CC0805KRX7R9BB104_0_1"
+      (polyline
+        (pts (xy -0.508001 0) (xy -2.540005 0))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy 0.508001 2.032004) (xy 0.508001 -2.032004))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy 2.540005 0) (xy 0.508001 0))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy -0.508001 -2.032004) (xy -0.508001 2.032004))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (pin unspecified line (at 5.08001 0 180) (length 2.540005)
+        (name "2" (effects (font (size 1.27 1.27)) hide))
+        (number "2" (effects (font (size 1.27 1.27)) hide))
+      )
+      (pin unspecified line (at -5.08001 0 0) (length 2.540005)
+        (name "1" (effects (font (size 1.27 1.27)) hide))
+        (number "1" (effects (font (size 1.27 1.27)) hide))
+      )
+    )
+  )
+    (symbol "power:+5V"
+      (power)
+      (pin_numbers (hide yes))
+      (pin_names (offset 0) (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Value" "+5V" (at 0 3.556 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "+5V_0_1"
+        (polyline (pts (xy -0.762 1.27) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+        (polyline (pts (xy 0 2.54) (xy 0.762 1.27)) (stroke (width 0) (type default)) (fill (type none)))
+        (polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+      )
+      (symbol "+5V_1_1"
+        (pin power_in line (at 0 0 90) (length 0)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "power:GND"
+      (power)
+      (pin_numbers (hide yes))
+      (pin_names (offset 0) (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Description" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "GND_0_1"
+        (polyline (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27))
+          (stroke (width 0) (type default)) (fill (type none)))
+      )
+      (symbol "GND_1_1"
+        (pin power_in line (at 0 0 270) (length 0)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Ports:RX"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(property "Reference" "#PORT"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "RX"
+			(at -1.905 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Signal port creates a global label with name RX"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global signal port"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "RX_0_1"
+			(polyline
+				(pts
+					(xy -5.08 -1.27) (xy -6.35 0) (xy -5.08 1.27) (xy 1.27 1.27) (xy 2.54 0) (xy 1.27 -1.27) (xy -5.08 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "RX_1_1"
+			(pin passive line
+				(at 2.54 0 0)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+    (symbol "Ports:TX"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(property "Reference" "#PORT"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "TX"
+			(at -1.905 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Signal port creates a global label with name TX"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global signal port"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TX_0_1"
+			(polyline
+				(pts
+					(xy -5.08 -1.27) (xy -6.35 0) (xy -5.08 1.27) (xy 1.27 1.27) (xy 2.54 0) (xy 1.27 -1.27) (xy -5.08 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TX_1_1"
+			(pin passive line
+				(at 2.54 0 0)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+    (symbol "Ports:RS485_A"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(property "Reference" "#PORT"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "RS485_A"
+			(at -1.905 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Signal port creates a global label with name RS485_A"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global signal port"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "RS485_A_0_1"
+			(polyline
+				(pts
+					(xy -5.08 -1.27) (xy -6.35 0) (xy -5.08 1.27) (xy 1.27 1.27) (xy 2.54 0) (xy 1.27 -1.27) (xy -5.08 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "RS485_A_1_1"
+			(pin passive line
+				(at 2.54 0 0)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+    (symbol "Ports:RS485_B"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(property "Reference" "#PORT"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "RS485_B"
+			(at -1.905 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Signal port creates a global label with name RS485_B"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global signal port"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "RS485_B_0_1"
+			(polyline
+				(pts
+					(xy -5.08 -1.27) (xy -6.35 0) (xy -5.08 1.27) (xy 1.27 1.27) (xy 2.54 0) (xy 1.27 -1.27) (xy -5.08 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "RS485_B_1_1"
+			(pin passive line
+				(at 2.54 0 0)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+  )
+
+  (junction (at 118.11 104.14)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "36d0cadb-021a-4e89-96cb-7e156a941e85")
+  )
+
+  (junction (at 134.62 100.33)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "aa60f9b4-3793-4220-80d8-f2d59dcbbe04")
+  )
+
+  (junction (at 167.64 99.06)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "4afc1219-2852-4d18-87ec-46dfbd19ae70")
+  )
+
+  (wire (pts (xy 118.11 96.52) (xy 139.7 96.52))
+    (stroke (width 0) (type default))
+    (uuid "21b52ea3-4493-42f9-af56-cbd5811e5e9c")
+  )
+
+  (wire (pts (xy 118.11 104.14) (xy 139.7 104.14))
+    (stroke (width 0) (type default))
+    (uuid "4053b77d-614f-4599-a97d-a1843b95b165")
+  )
+
+  (wire (pts (xy 118.11 104.14) (xy 118.11 110.49))
+    (stroke (width 0) (type default))
+    (uuid "b5a23ad0-0566-484b-a64d-fa2422fed354")
+  )
+
+  (wire (pts (xy 125.73 110.49) (xy 129.54 110.49))
+    (stroke (width 0) (type default))
+    (uuid "53fb5642-7141-4404-9cd7-905c71b40767")
+  )
+
+  (wire (pts (xy 139.7 99.06) (xy 134.62 99.06))
+    (stroke (width 0) (type default))
+    (uuid "f9ef8eb3-9544-42cd-a7dd-cb558a034241")
+  )
+
+  (wire (pts (xy 139.7 101.6) (xy 134.62 101.6))
+    (stroke (width 0) (type default))
+    (uuid "156a0485-2e42-49c0-9a71-8afd360c76cd")
+  )
+
+  (wire (pts (xy 134.62 99.06) (xy 134.62 101.6))
+    (stroke (width 0) (type default))
+    (uuid "fe83f704-1598-4540-967e-a12af02636b2")
+  )
+
+  (wire (pts (xy 134.62 96.52) (xy 134.62 100.33))
+    (stroke (width 0) (type default))
+    (uuid "f36d7ded-0012-4d71-8aba-2ba45eaa434b")
+  )
+
+  (wire (pts (xy 134.62 105.41) (xy 134.62 100.33))
+    (stroke (width 0) (type default))
+    (uuid "5ad344ee-3ec3-4388-81f5-4488e96b7b6c")
+  )
+
+  (wire (pts (xy 134.62 88.9) (xy 134.62 85.09))
+    (stroke (width 0) (type default))
+    (uuid "535c1ce5-a369-41d3-b26b-30f2368a5022")
+  )
+
+  (wire (pts (xy 134.62 115.57) (xy 134.62 119.38))
+    (stroke (width 0) (type default))
+    (uuid "9045c385-5338-4b4d-a4c3-2f433dcc8aa2")
+  )
+
+  (wire (pts (xy 160.02 96.52) (xy 167.64 96.52))
+    (stroke (width 0) (type default))
+    (uuid "3cea3fbf-4554-4089-9656-a7d7ef10ad7c")
+  )
+
+  (wire (pts (xy 167.64 106.68) (xy 167.64 110.49))
+    (stroke (width 0) (type default))
+    (uuid "db382dc1-140d-4e0b-a7f2-0be7932482e2")
+  )
+
+  (wire (pts (xy 160.02 104.14) (xy 160.02 109.22))
+    (stroke (width 0) (type default))
+    (uuid "7991c929-567d-4e33-b141-601688ebe956")
+  )
+
+  (wire (pts (xy 182.88 101.6) (xy 160.02 101.6))
+    (stroke (width 0) (type default))
+    (uuid "c15439c9-8b23-4b8c-b40b-f87f93c49e80")
+  )
+
+  (wire (pts (xy 182.88 99.06) (xy 160.02 99.06))
+    (stroke (width 0) (type default))
+    (uuid "4cd1c971-e685-40c2-818a-621a55f06a83")
+  )
+
+  (wire (pts (xy 167.64 100.33) (xy 167.64 99.06))
+    (stroke (width 0) (type default))
+    (uuid "ccd76a9f-473b-4dcb-9891-d4377babccae")
+  )
+
+  (wire (pts (xy 167.64 107.95) (xy 167.64 111.76))
+    (stroke (width 0) (type default))
+    (uuid "3f27a238-9dab-4a35-aadc-a3f5879b3399")
+  )
+
+  (symbol
+    (lib_id "JLCImport:MAX485ESA_T")
+    (at 149.86 100.33 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1cd4466d-7727-487a-a3b0-12067c631176")
+    (property "Reference" "U7"
+      (at 149.86 92.71 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "MAX485"
+      (at 149.86 107.95 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:MAX485ESA_T"
+      (at 149.86 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C19738"
+      (at 149.86 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "U7")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "JLCImport:SS8050_C2150")
+    (at 134.62 110.49 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "3300ca0b-50f6-4269-a0f2-8ddec630f79a")
+    (property "Reference" "Q1"
+      (at 138.43 107.95 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SS8050"
+      (at 138.43 113.03 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:SS8050_C2150"
+      (at 134.62 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C2150"
+      (at 134.62 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "Q1")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "JLCImport:0805W8F1001T5E")
+    (at 134.62 92.71 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "b7117ed2-b19a-4319-8ebf-a4fe913c544e")
+    (property "Reference" "R11"
+      (at 130.81 92.71 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1k"
+      (at 138.43 92.71 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:0805W8F1001T5E"
+      (at 134.62 92.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C17513"
+      (at 134.62 92.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "R11")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "JLCImport:0805W8F4701T5E")
+    (at 121.92 110.49 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f1c8a7e7-9f3a-4ef1-bd8c-31a1d4da0769")
+    (property "Reference" "R13"
+      (at 121.92 107.95 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "4.7k"
+      (at 121.92 113.03 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:0805W8F4701T5E"
+      (at 121.92 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C17673"
+      (at 121.92 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "R13")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "JLCImport:0805W8F4701T5E")
+    (at 167.64 104.14 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "95907d7a-34e4-4881-8d9e-6de3d3abcd4d")
+    (property "Reference" "R14"
+      (at 163.83 104.14 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "4.7k"
+      (at 171.45 104.14 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:0805W8F4701T5E"
+      (at 167.64 104.14 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C17673"
+      (at 167.64 104.14 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "R14")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "JLCImport:CC0805KRX7R9BB104")
+    (at 167.64 101.6 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "4ab79cf5-74b5-4f05-940c-826c27c14e7d")
+    (property "Reference" "C14"
+      (at 163.83 101.6 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "100nF"
+      (at 171.45 101.6 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:CC0805KRX7R9BB104"
+      (at 167.64 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C49678"
+      (at 167.64 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "C14")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "power:+5V")
+    (at 134.62 85.09 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "78d0a5c8-8029-4c8a-a729-675b69b39fe3")
+    (property "Reference" "#PWR01" (at 134.62 91.44 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "+5V" (at 134.62 81.53 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 134.62 85.09 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "#PWR01")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "power:GND")
+    (at 160.02 109.22 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a4850804-f10c-47ef-a167-020cefb4ec5b")
+    (property "Reference" "#PWR02" (at 160.02 115.57 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 160.02 113.03 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 160.02 109.22 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "#PWR02")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "power:GND")
+    (at 134.62 119.38 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "893807a9-fe9f-41ae-9a25-964a43606791")
+    (property "Reference" "#PWR03" (at 134.62 125.73 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 134.62 123.19 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 134.62 119.38 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "#PWR03")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "power:GND")
+    (at 167.64 111.76 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "815b16ee-96c5-41da-9ea0-999244f5fa11")
+    (property "Reference" "#PWR04" (at 167.64 118.11 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 167.64 115.57 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 167.64 111.76 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "#PWR04")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "power:GND")
+    (at 167.64 110.49 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "571fd959-686c-4f41-a568-2185cab7288d")
+    (property "Reference" "#PWR05" (at 167.64 116.84 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 167.64 114.3 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 167.64 110.49 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "#PWR05")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "Ports:RX")
+    (at 115.57 96.52 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "4fe262eb-99e9-4c56-977d-c3a54e6f63e9")
+    (property "Reference" "#PORT01" (at 115.57 99.06 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "RX" (at 113.66 96.52 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 115.57 96.52 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "#PORT01")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "Ports:TX")
+    (at 115.57 104.14 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "47a1b06b-f43a-41e0-acb4-5027e2bd585f")
+    (property "Reference" "#PORT02" (at 115.57 106.68 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "TX" (at 113.66 104.14 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 115.57 104.14 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "#PORT02")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "Ports:RS485_A")
+    (at 185.42 101.6 180)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "5551944a-8edd-49df-a7aa-d3be2177e727")
+    (property "Reference" "#PORT03" (at 185.42 104.14 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "RS485_A" (at 187.32 101.6 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 185.42 101.6 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "#PORT03")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "Ports:RS485_B")
+    (at 185.42 99.06 180)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "d3e12eed-2345-460b-af14-f599f9de4545")
+    (property "Reference" "#PORT04" (at 185.42 101.6 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "RS485_B" (at 187.32 99.06 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 185.42 99.06 0) (effects (font (size 1.27 1.27)) hide))
+    (instances
+      (project "AITestProject"
+        (path "/e7c5d4f6-2b8a-4e9c-d0a3-1f6a7b8c9d0e"
+          (reference "#PORT04")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/"
+      (page "1")
+    )
+  )
+  (embedded_fonts no)
+)

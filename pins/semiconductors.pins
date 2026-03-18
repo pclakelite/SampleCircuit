@@ -1,0 +1,27 @@
+Pin Reference: Semiconductors
+================================
+Source: KiCad 9.0 standard libraries
+Extracted with: extract_pins.py
+
+---------------------------------------------------------------------
+Q_NMOS_GSD / 2N7002 (SOT-23 N-MOSFET)
+Library: Transistor_FET.kicad_sym
+---------------------------------------------------------------------
+  At angle=0:
+    Pin "1" (G) local=(-5.08, 0)    -> offset (-5.08, 0)   = LEFT (gate)
+    Pin "2" (S) local=(2.54, -5.08) -> offset (2.54, +5.08) = LOWER RIGHT (source)
+    Pin "3" (D) local=(2.54, 5.08)  -> offset (2.54, -5.08) = UPPER RIGHT (drain)
+
+---------------------------------------------------------------------
+1N4001 / 1N4148W (diode)
+Library: Diode.kicad_sym
+---------------------------------------------------------------------
+  At angle=0 (HORIZONTAL):
+    Pin "1" (K) local=(-3.81, 0) -> offset (-3.81, 0) = LEFT (cathode)
+    Pin "2" (A) local=(3.81, 0)  -> offset (+3.81, 0) = RIGHT (anode)
+  At angle=90 (VERTICAL):
+    Pin "1" (K) -> offset (0, -3.81) = TOP (cathode)
+    Pin "2" (A) -> offset (0, +3.81) = BOTTOM (anode)
+  At angle=270 (VERTICAL, same result as 90 for diodes):
+    Pin "1" (K) -> offset (0, -3.81) = TOP (cathode)
+    Pin "2" (A) -> offset (0, +3.81) = BOTTOM (anode)

@@ -1,0 +1,15 @@
+Pin Reference: Passive Components
+===================================
+Source: KiCad 9.0 standard library (Device.kicad_sym)
+Extracted with: extract_pins.py
+
+---------------------------------------------------------------------
+Device:R / Device:C (2-pin passive, symmetric body)
+---------------------------------------------------------------------
+  At angle=0 (VERTICAL):
+    Pin "1" local=(0, 3.81)   -> offset (0, -3.81) = TOP
+    Pin "2" local=(0, -3.81)  -> offset (0, +3.81) = BOTTOM
+  At angle=90 (HORIZONTAL):
+    Pin "1" -> offset (-3.81, 0) = LEFT
+    Pin "2" -> offset (+3.81, 0) = RIGHT
+  CRITICAL: Offset is 3.81mm, NOT 2.54mm.

@@ -1,0 +1,21 @@
+Pin Reference: W25Q32JVZP / W25Q128JVS (SPI NOR Flash)
+=========================================================
+Library: Memory_Flash.kicad_sym
+Package: SOIC-8 (W25Q128JVS) / USON-8 (W25Q32JVZP)
+
+---------------------------------------------------------------------
+At angle=0:
+---------------------------------------------------------------------
+  Pin "1" (CS)   local=(-10.16, 7.62)  -> offset (-10.16, -7.62) = LEFT
+  Pin "2" (DO)   local=(-10.16, 0)     -> offset (-10.16, 0)     = LEFT
+  Pin "3" (WP)   local=(-10.16, -2.54) -> offset (-10.16, +2.54) = LEFT
+  Pin "4" (GND)  local=(0, -12.7)      -> offset (0, +12.7)      = BOTTOM
+  Pin "5" (DI)   local=(-10.16, 2.54)  -> offset (-10.16, -2.54) = LEFT
+  Pin "6" (CLK)  local=(-10.16, 5.08)  -> offset (-10.16, -5.08) = LEFT
+  Pin "7" (HOLD) local=(-10.16, -5.08) -> offset (-10.16, +5.08) = LEFT
+  Pin "8" (VCC)  local=(0, 12.7)       -> offset (0, -12.7)      = TOP
+  Pin "9" (EP)   local=(2.54, -12.7)   -> offset (2.54, +12.7)   = BOTTOM
+
+  SPI: CS (1), DO/MISO (2), DI/MOSI (5), CLK (6) - all on left
+  Control: WP (3), HOLD (7) - left side, active low
+  Power: VCC (8) top, GND (4) bottom, EP (9) bottom

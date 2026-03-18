@@ -1,0 +1,136 @@
+ERC report (2026-03-06T10:37:26-0500, Encoding UTF8)
+
+***** Sheet /
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(110.49 mm, 95.25 mm): Symbol #PWR01 Pin 1 [Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(133.35 mm, 109.22 mm): Symbol #PWR02 Pin 1 [Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(193.04 mm, 100.33 mm): Symbol #PWR08 Pin 1 [Power input, Line]
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(186.69 mm, 119.38 mm): Symbol R32 Pin 1 [1, Input, Line]
+[lib_symbol_mismatch]: Symbol '+12V' doesn't match copy in library 'power'
+    ; warning
+    @(110.49 mm, 95.25 mm): Symbol #PWR01 [+12V]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(110.49 mm, 101.60 mm): Symbol D8 Pin 2 [A, Unspecified, Line]
+    @(110.49 mm, 95.25 mm): Symbol #PWR01 Pin 1 [Power input, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'JLCImport'.
+    ; warning
+    @(115.57 mm, 101.60 mm): Symbol D8 [PMEG6030EVPX]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'JLCImport'
+    ; warning
+    @(115.57 mm, 101.60 mm): Symbol D8 [PMEG6030EVPX]
+[pin_to_pin]: Pins of type Unspecified and Unspecified are connected
+    ; warning
+    @(120.65 mm, 101.60 mm): Symbol D8 Pin 1 [K, Unspecified, Line]
+    @(135.89 mm, 101.60 mm): Symbol U5 Pin 3 [VIN, Unspecified, Line]
+[pin_to_pin]: Pins of type Unspecified and Unspecified are connected
+    ; warning
+    @(123.19 mm, 101.60 mm): Symbol C11 Pin 1 [1, Unspecified, Line]
+    @(120.65 mm, 101.60 mm): Symbol D8 Pin 1 [K, Unspecified, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'JLCImport'.
+    ; warning
+    @(123.19 mm, 106.68 mm): Symbol C11 [EEEFT1V681UP]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'JLCImport'
+    ; warning
+    @(123.19 mm, 106.68 mm): Symbol C11 [EEEFT1V681UP]
+[pin_to_pin]: Pins of type Unspecified and Unspecified are connected
+    ; warning
+    @(129.54 mm, 101.60 mm): Symbol C34 Pin 2 [2, Unspecified, Line]
+    @(135.89 mm, 101.60 mm): Symbol U5 Pin 3 [VIN, Unspecified, Line]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(123.19 mm, 111.76 mm): Symbol C11 Pin 2 [2, Unspecified, Line]
+    @(123.19 mm, 116.84 mm): Symbol #PWR04 Pin 1 [Power input, Line]
+[pin_to_pin]: Pins of type Unspecified and Unspecified are connected
+    ; warning
+    @(135.89 mm, 96.52 mm): Symbol U5 Pin 1 [GND, Unspecified, Line]
+    @(135.89 mm, 99.06 mm): Symbol U5 Pin 2 [MODE/SYNC, Unspecified, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'JLCImport'.
+    ; warning
+    @(129.54 mm, 106.68 mm): Symbol C34 [GRM32ER7YA106KA12L]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'JLCImport'
+    ; warning
+    @(129.54 mm, 106.68 mm): Symbol C34 [GRM32ER7YA106KA12L]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(135.89 mm, 99.06 mm): Symbol U5 Pin 2 [MODE/SYNC, Unspecified, Line]
+    @(133.35 mm, 109.22 mm): Symbol #PWR02 Pin 1 [Power input, Line]
+[pin_to_pin]: Pins of type Unspecified and Unspecified are connected
+    ; warning
+    @(135.89 mm, 101.60 mm): Symbol U5 Pin 3 [VIN, Unspecified, Line]
+    @(135.89 mm, 104.14 mm): Symbol U5 Pin 4 [EN, Unspecified, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(123.19 mm, 116.84 mm): Symbol #PWR04 [GND]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(129.54 mm, 111.76 mm): Symbol C34 Pin 1 [1, Unspecified, Line]
+    @(133.35 mm, 109.22 mm): Symbol #PWR02 Pin 1 [Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(133.35 mm, 109.22 mm): Symbol #PWR02 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(129.54 mm, 116.84 mm): Symbol #PWR05 [GND]
+[footprint_link_issues]: The current configuration does not include the footprint library 'JLCImport'.
+    ; warning
+    @(149.86 mm, 100.33 mm): Symbol U5 [LMZM23601SILR]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'JLCImport'
+    ; warning
+    @(149.86 mm, 100.33 mm): Symbol U5 [LMZM23601SILR]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(163.83 mm, 93.98 mm): Symbol U5 Pin 11 [EP, Unspecified, Line]
+    @(167.64 mm, 93.98 mm): Symbol #PWR03 Pin 1 [Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(167.64 mm, 93.98 mm): Symbol #PWR03 [GND]
+[pin_to_pin]: Pins of type Unspecified and Input are connected
+    ; warning
+    @(163.83 mm, 104.14 mm): Symbol U5 Pin 7 [FB, Unspecified, Line]
+    @(186.69 mm, 119.38 mm): Symbol R32 Pin 1 [1, Input, Line]
+[pin_to_pin]: Pins of type Unspecified and Input are connected
+    ; warning
+    @(163.83 mm, 106.68 mm): Symbol U5 Pin 6 [VOUT, Unspecified, Line]
+    @(180.34 mm, 106.68 mm): Symbol R31 Pin 1 [1, Input, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'JLCImport'.
+    ; warning
+    @(180.34 mm, 111.76 mm): Symbol R31 [0805W8F1002T5E]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'JLCImport'
+    ; warning
+    @(180.34 mm, 111.76 mm): Symbol R31 [0805W8F1002T5E]
+[lib_symbol_mismatch]: Symbol '+3.3V' doesn't match copy in library 'power'
+    ; warning
+    @(193.04 mm, 100.33 mm): Symbol #PWR08 [+3.3V]
+[footprint_link_issues]: The current configuration does not include the footprint library 'JLCImport'.
+    ; warning
+    @(186.69 mm, 124.46 mm): Symbol R32 [0805W8F4221T5E]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'JLCImport'
+    ; warning
+    @(186.69 mm, 124.46 mm): Symbol R32 [0805W8F4221T5E]
+[pin_to_pin]: Pins of type Unspecified and Input are connected
+    ; warning
+    @(193.04 mm, 119.38 mm): Symbol C35 Pin 2 [2, Unspecified, Line]
+    @(180.34 mm, 116.84 mm): Symbol R31 Pin 2 [2, Input, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'JLCImport'.
+    ; warning
+    @(193.04 mm, 124.46 mm): Symbol C35 [GRM32EC81C476KE15L]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'JLCImport'
+    ; warning
+    @(193.04 mm, 124.46 mm): Symbol C35 [GRM32EC81C476KE15L]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(190.50 mm, 132.08 mm): Symbol #PWR06 [GND]
+[pin_to_pin]: Pins of type Unspecified and Power input are connected
+    ; warning
+    @(193.04 mm, 129.54 mm): Symbol C35 Pin 1 [1, Unspecified, Line]
+    @(190.50 mm, 132.08 mm): Symbol #PWR06 Pin 1 [Power input, Line]
+
+ ** ERC messages: 39  Errors 4  Warnings 35

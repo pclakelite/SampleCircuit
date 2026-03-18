@@ -1,0 +1,14 @@
+{
+  "template": "psu_lmzm23601_5v",
+  "status": "locked",
+  "reviewed": "yes",
+  "reviewer_initials": "PL",
+  "reviewer_name": "Peter",
+  "locked_by": "human",
+  "locked_date": "2026-03-06",
+  "description": "Human-reviewed, wiring verified in KiCad. 5V output version. Do not regenerate.",
+  "changelog": [
+    {"date": "2026-03-06", "from": "new", "to": "draft", "by": "ai"},
+    {"date": "2026-03-06", "from": "draft", "to": "locked", "by": "human"}
+  ]
+}

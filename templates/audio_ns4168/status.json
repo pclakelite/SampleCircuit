@@ -1,0 +1,15 @@
+{
+  "template": "audio_ns4168",
+  "status": "locked",
+  "reviewed": "yes",
+  "reviewer_initials": "PL",
+  "reviewer_name": "Peter",
+  "locked_by": "human",
+  "locked_date": "2026-03-13",
+  "description": "NS4168 I2S Class D audio amp, +5V, AMP_EN GPIO shutdown, R20 100K pull-down, datasheet bypass caps",
+  "changelog": [
+    {"date": "2026-03-13", "from": "new", "to": "draft", "by": "ai"},
+    {"date": "2026-03-13", "from": "draft", "to": "review", "by": "user", "notes": "Verified in KiCad. Fixed C17 cap pin offset (3.81mm not 5.08mm). Changed CTRL from pull-up to AMP_EN GPIO + R20 pull-down for pop-free startup. User opened schematic, KiCad re-annotated and repositioned R20. Saved."},
+    {"date": "2026-03-13", "from": "review", "to": "locked", "by": "human"}
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "template": "psu_lmzm23601_12v",
+  "status": "draft",
+  "reviewed": "no",
+  "description": "LMZM23601 24V-to-12V buck converter, 1A, feedback: 110K/10K"
+}

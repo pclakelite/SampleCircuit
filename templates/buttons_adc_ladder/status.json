@@ -1,0 +1,31 @@
+{
+  "template": "buttons_adc_ladder",
+  "status": "review",
+  "reviewed": "no",
+  "reviewer_initials": "",
+  "reviewer_name": "",
+  "locked_by": "",
+  "locked_date": "",
+  "description": "6-button resistor ladder read via single ADC pin. From simple-blower-V1.0 reference.",
+  "reference": "AIreference/SCH_simple-blower-V1.0_1-P1_2025-12-20 (1).pdf",
+  "changelog": [
+    {
+      "date": "2026-03-07",
+      "from": "new",
+      "to": "draft",
+      "by": "ai"
+    },
+    {
+      "date": "2026-03-07",
+      "from": "draft",
+      "to": "review",
+      "by": "ai"
+    },
+    {
+      "date": "2026-03-07",
+      "from": "review",
+      "to": "review",
+      "by": "ai"
+    }
+  ]
+}

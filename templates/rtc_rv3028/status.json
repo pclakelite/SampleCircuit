@@ -1,0 +1,14 @@
+{
+  "template": "rtc_rv3028",
+  "status": "locked",
+  "reviewed": "yes",
+  "reviewer_initials": "PL",
+  "reviewer_name": "Peter",
+  "locked_by": "human",
+  "locked_date": "2026-03-06",
+  "description": "Human-reviewed, wiring verified in KiCad. Do not regenerate.",
+  "changelog": [
+    {"date": "2026-03-05", "from": "draft", "to": "review", "by": "ai"},
+    {"date": "2026-03-06", "from": "review", "to": "locked", "by": "human"}
+  ]
+}

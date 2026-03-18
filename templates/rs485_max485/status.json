@@ -1,0 +1,25 @@
+{
+  "template": "rs485_max485",
+  "status": "review",
+  "reviewed": "no",
+  "reviewer_initials": "",
+  "reviewer_name": "",
+  "locked_by": "",
+  "locked_date": "",
+  "description": "MAX485ESA+T RS-485 transceiver with NPN auto-direction control. From simple-blower-V1.0 reference.",
+  "reference": "AIreference/SCH_simple-blower-V1.0_1-P1_2025-12-20 (1).pdf",
+  "changelog": [
+    {
+      "date": "2026-03-07",
+      "from": "new",
+      "to": "draft",
+      "by": "ai"
+    },
+    {
+      "date": "2026-03-07",
+      "from": "draft",
+      "to": "review",
+      "by": "ai"
+    }
+  ]
+}

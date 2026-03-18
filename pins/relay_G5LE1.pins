@@ -1,0 +1,23 @@
+Pin Reference: G5LE-1 Relay (Omron)
+=======================================
+Library: Relay.kicad_sym
+Type: SINGLE UNIT (all pins in one symbol - NOT multi-unit!)
+Package: THT Relay_SPDT
+
+IMPORTANT: This is a single-unit symbol. Place once with unit=1 and
+all 5 pin UUIDs. Do NOT place as separate units.
+
+---------------------------------------------------------------------
+All pins (at angle=0):
+---------------------------------------------------------------------
+  Pin "5" local=(-5.08, 7.62)  -> offset (-5.08, -7.62) = UPPER LEFT  (coil-)
+  Pin "2" local=(-5.08, -7.62) -> offset (-5.08, +7.62) = LOWER LEFT  (COM)
+  Pin "4" local=(2.54, 7.62)   -> offset (2.54, -7.62)  = UPPER CENTER (NO)
+  Pin "1" local=(5.08, -7.62)  -> offset (5.08, +7.62)  = LOWER RIGHT (coil+)
+  Pin "3" local=(7.62, 7.62)   -> offset (7.62, -7.62)  = UPPER RIGHT (NC)
+
+Coil connections: Pin 5 (coil-) at top-left, Pin 1 (coil+) at bottom-right
+Switch contacts: Pin 2 (COM) at bottom-left, Pin 4 (NO) at top-center,
+                 Pin 3 (NC) at top-right
+
+Body bounding box: half=(10.16, 5.08), size=20.32 x 10.16mm

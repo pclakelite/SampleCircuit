@@ -1,0 +1,20 @@
+{
+  "template": "uart_sc16is752",
+  "status": "review",
+  "description": "SC16IS752 I2C-to-dual-UART bridge (Channel A TX/RX only)",
+  "created": "2026-03-06",
+  "updated": "2026-03-07",
+  "components": [
+    "SC16IS752IPW,112 (U1) — TSSOP-28, C57156",
+    "7U14745AE12UCG (X1) — 14.7456MHz crystal, C557185",
+    "CL21C150JBANNNC (C1, C2) — 15pF 0805, C1794",
+    "CC0805KRX7R9BB104 (C3) — 100nF 0805, C49678",
+    "0805W8F1002T5E (R1) — 10k 0805, C17414",
+    "0805W8F1001T5E (R2) — 1k 0805, C17513",
+    "0805W8F1004T5E (R3) — 1M 0805, C17514"
+  ],
+  "ports": ["TX", "RX", "SCL", "SDA"],
+  "power_rails": ["+3.3V", "GND"],
+  "notes": "Channel B TX/RX and GPIO0-7 set as no-connect. I2C address 0x4D (A0=GND, A1=GND). Crystal changed to 14.7456MHz with 1M feedback resistor per reference design.",
+  "reference": "AIreference/i2c_uart_board_reference_design"
+}

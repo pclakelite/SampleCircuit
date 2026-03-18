@@ -1,0 +1,15 @@
+{
+  "template": "rtc_pcf8563",
+  "status": "review",
+  "reviewed": "no",
+  "reviewer_initials": "",
+  "reviewer_name": "",
+  "locked_by": "",
+  "locked_date": "",
+  "description": "PCF8563 I2C RTC with 32.768kHz crystal and coin cell backup. From simple-blower-V1.0 reference.",
+  "reference": "AIreference/SCH_simple-blower-V1.0_1-P1_2025-12-20 (1).pdf",
+  "changelog": [
+    {"date": "2026-03-07", "from": "new", "to": "draft", "by": "ai"},
+    {"date": "2026-03-07", "from": "draft", "to": "review", "by": "ai"}
+  ]
+}

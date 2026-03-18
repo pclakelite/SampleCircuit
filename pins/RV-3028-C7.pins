@@ -1,0 +1,20 @@
+Pin Reference: RV-3028-C7 (I2C RTC)
+=======================================
+Library: Timer_RTC.kicad_sym
+Package: SON-8 (1.5x3.2mm)
+
+---------------------------------------------------------------------
+At angle=0:
+---------------------------------------------------------------------
+  Pin "1" (CLKOUT)  local=(12.7, -2.54)  -> offset (12.7, +2.54)   = RIGHT
+  Pin "2" (INT)     local=(12.7, 2.54)   -> offset (12.7, -2.54)   = RIGHT
+  Pin "3" (SCL)     local=(-12.7, 5.08)  -> offset (-12.7, -5.08)  = LEFT
+  Pin "4" (SDA)     local=(-12.7, 2.54)  -> offset (-12.7, -2.54)  = LEFT
+  Pin "5" (VSS)     local=(0, -10.16)    -> offset (0, +10.16)     = BOTTOM
+  Pin "6" (VBACKUP) local=(0, 10.16)     -> offset (0, -10.16)     = TOP
+  Pin "7" (VDD)     local=(-2.54, 10.16) -> offset (-2.54, -10.16) = TOP
+  Pin "8" (EVI)     local=(-12.7, -2.54) -> offset (-12.7, +2.54)  = LEFT
+
+  I2C: SCL (3), SDA (4) on left side
+  Power: VDD (7) top, VSS (5) bottom, VBACKUP (6) top
+  Outputs: INT (2) right, CLKOUT (1) right
