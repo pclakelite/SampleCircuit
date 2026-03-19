@@ -963,6 +963,69 @@
       )
     )
   )
+    (symbol "JLCImport:GRM32EC81E476KE15L"
+    (pin_numbers (hide yes))
+    (pin_names (offset 1.016) (hide yes))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "C" (at 0 2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "GRM32EC81E476KE15L" (at 0 -2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:GRM32EC81C476KE15L" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "47uF(476) ±10% 25V X5R 1210" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_keywords" "C1210 C86211 GRM32EC81E476KE15L muRata" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C86211" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "muRata" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part" "GRM32EC81E476KE15L" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "GRM32EC81E476KE15L_0_1"
+      (polyline
+        (pts (xy 0.508001 2.032004) (xy 0.508001 -2.032004))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy -2.540005 0) (xy -0.508001 0))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy -0.508001 -2.032004) (xy -0.508001 2.032004))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy 0.508001 0) (xy 2.540005 0))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (pin unspecified line (at 5.08001 0 180) (length 2.540005)
+        (name "1" (effects (font (size 1.27 1.27)) hide))
+        (number "1" (effects (font (size 1.27 1.27)) hide))
+      )
+      (pin unspecified line (at -5.08001 0 0) (length 2.540005)
+        (name "2" (effects (font (size 1.27 1.27)) hide))
+        (number "2" (effects (font (size 1.27 1.27)) hide))
+      )
+    )
+  )
     (symbol "power:+3.3V"
       (power)
       (pin_numbers (hide yes))
@@ -4271,7 +4334,7 @@
   )
 
   (symbol
-    (lib_id "JLCImport:1206X476M160NT")
+    (lib_id "JLCImport:GRM32EC81E476KE15L")
     (at 167.64 124.46 270)
     (unit 1)
     (exclude_from_sim no)
@@ -4283,15 +4346,15 @@
       (at 162.56 124.46 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "47uF 16V"
+    (property "Value" "47uF 25V"
       (at 172.72 124.46 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "JLCImport:1206X476M160NT"
+    (property "Footprint" "JLCImport:GRM32EC81C476KE15L"
       (at 167.64 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C172351"
+    (property "LCSC" "C86211"
       (at 167.64 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -9949,6 +10012,83 @@
       (project "SampleCircuit"
         (path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
           (reference "#PORT42")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (junction (at 358.14 101.6)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "f5a6b7c8-d9e0-1234-f012-456789012345")
+  )
+
+  (wire (pts (xy 358.14 111.76) (xy 358.14 116.84))
+    (stroke (width 0) (type default))
+    (uuid "06b7c8d9-e0f1-2345-0123-567890123456")
+  )
+
+  (symbol
+    (lib_id "JLCImport:GRM32ER7YA106KA12L")
+    (at 358.14 106.68 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a1b2c3d4-e5f6-7890-abcd-ef1234567890")
+    (property "Reference" "C108"
+      (at 353.06 106.68 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "10uF 35V"
+      (at 360.68 106.68 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:GRM32ER7YA106KA12L"
+      (at 358.14 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C97973"
+      (at 358.14 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "SampleCircuit"
+        (path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+          (reference "C108")
+          (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol
+    (lib_id "power:GND")
+    (at 358.14 116.84 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d3e4f5a6-b7c8-9012-def0-234567890123")
+    (property "Reference" "#PWR105"
+      (at 358.14 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND"
+      (at 358.14 121.92 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" ""
+      (at 358.14 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "SampleCircuit"
+        (path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+          (reference "#PWR105")
           (unit 1)
         )
       )
