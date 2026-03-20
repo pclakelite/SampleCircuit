@@ -1,6 +1,6 @@
 KiCad 9 PCB Component Placement - General Specification
 =========================================================
-Version: 1.5
+Version: 1.6
 Scope: General-purpose (applies to any KiCad 9 PCB project)
 
 PURPOSE
@@ -681,6 +681,19 @@ changes to the board.
     - Run KiCad DRC for clearance and connectivity violations
     - Unrouted nets may need manual routing or a placement adjustment
 
+13g. GND STITCHING VIAS: After autorouting with a GND copper pour, some
+    GND pads on the front copper layer may become isolated from the pour
+    because autorouter traces fragment the ground plane. For each GND pad
+    that is not connected to the GND pour on its layer:
+    1. Place a via within 1mm of the isolated pad
+    2. The via connects F.Cu to B.Cu, allowing GND current to flow
+       through the back copper GND plane
+    3. Use the same via size as the signal net class (e.g., 0.6mm dia,
+       0.3mm drill for standard boards)
+    4. After placing stitching vias, refill zones and re-run DRC
+    This is a common post-autoroute cleanup step and should be performed
+    before final verification.
+
 13f. RE-ROUTING AFTER PLACEMENT CHANGES: If components are moved after
     routing, the existing traces may become invalid. The user must
     explicitly choose one of:
@@ -688,3 +701,60 @@ changes to the board.
     2. Manually fix only the affected traces
     3. Accept the current routing if the change was minor
     This decision is always made by the user — never automatically.
+
+
+14. Fabrication Constraints
+-----------------------------
+    All PCB designs MUST meet the target fabricator's standard-tier
+    specifications. Using values below these minimums triggers advanced
+    or HDI pricing tiers, significantly increasing cost. Always design
+    to standard-tier limits unless the project explicitly requires
+    advanced capabilities.
+
+14a. DESIGN RULE SETUP: Before running DRC or autorouting, set KiCad's
+    Board Setup → Design Rules → Constraints to match the fabricator's
+    standard-tier minimums. This ensures DRC catches violations before
+    manufacturing.
+
+14b. STANDARD-TIER FABRICATION PROFILES:
+
+    JLCPCB Standard (2-layer):
+      Parameter              | Standard Min | Advanced Trigger
+      Min trace width        | 0.127mm      | < 0.09mm
+      Min trace spacing      | 0.127mm      | < 0.09mm
+      Min via drill          | 0.3mm        | < 0.2mm
+      Min via diameter       | 0.5mm        | (derived from drill + 2x annular ring)
+      Min annular ring       | 0.13mm       | < 0.075mm
+      Min hole-to-hole       | 0.5mm        | —
+      Via types              | Through only | Blind/buried = HDI
+      Layers                 | 1-2          | 4+ = different pricing
+      Board thickness        | 0.4-2.0mm    | —
+      Min board size         | 7x7mm        | —
+      Max board size         | 500x400mm    | —
+
+    OSH Park (2-layer):
+      Min trace/space: 0.152mm (6mil), min drill: 0.254mm (10mil)
+
+    PCBWay Standard (2-layer):
+      Min trace/space: 0.1mm, min drill: 0.2mm, min annular ring: 0.15mm
+
+14c. RECOMMENDED DESIGN VALUES: To stay safely within standard-tier
+    pricing and ensure reliable manufacturing, use values above the
+    absolute minimums:
+
+      Parameter          | Recommended | Absolute Min (JLCPCB)
+      Trace width        | 0.2mm+      | 0.127mm
+      Trace spacing      | 0.2mm+      | 0.127mm
+      Via drill          | 0.3mm       | 0.3mm
+      Via diameter       | 0.6mm       | 0.5mm
+      Annular ring       | 0.15mm+     | 0.13mm
+      Power trace width  | 0.5mm+      | 0.127mm
+
+14d. VERIFICATION: Before submitting Gerber files, confirm:
+    - All trace widths >= fabricator minimum
+    - All via drills >= fabricator minimum
+    - All annular rings >= fabricator minimum
+    - No blind or buried vias (unless HDI is intended)
+    - Board dimensions within fabricator limits
+    - DRC passes with design rules set to fabricator minimums
+    - Net class trace widths all exceed the fabricator minimum
