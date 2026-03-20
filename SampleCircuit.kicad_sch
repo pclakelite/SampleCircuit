@@ -16105,6 +16105,120 @@
 			)
 			(embedded_fonts no)
 		)
+    (symbol "JLCImport:SS34_C8678"
+    (pin_names (offset 1.016) (hide yes))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "D" (at 0 2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SS34_C8678" (at 0 -2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:SS34_C8678" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://item.szlcsc.com/34721.html" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "SS34" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_keywords" "C8678 MDD SMA_L4.3-W2.6-LS5.2-RD SS34" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C8678" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "MDD" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part" "SS34" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "SS34_C8678_0_1"
+      (polyline
+        (pts (xy 1.270003 1.524003) (xy -1.270003 0) (xy 1.270003 -1.778004) (xy 1.270003 1.524003))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy -1.270003 0) (xy -1.270003 -2.032004) (xy -0.762002 -2.032004) (xy -0.762002 -1.778004))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy -1.270003 0) (xy -1.270003 2.032004) (xy -1.778004 2.032004) (xy -1.778004 1.778004))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (pin unspecified line (at 5.08001 0 180) (length 3.810008)
+        (name "A" (effects (font (size 1.27 1.27)) hide))
+        (number "2" (effects (font (size 1.27 1.27)) hide))
+      )
+      (pin unspecified line (at -5.08001 0 0) (length 3.810008)
+        (name "K" (effects (font (size 1.27 1.27)) hide))
+        (number "1" (effects (font (size 1.27 1.27)) hide))
+      )
+    )
+  )
+    (symbol "JLCImport:SMBJ26CA_C89651"
+    (pin_names (offset 1.016) (hide yes))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "D" (at 0 2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SMBJ26CA_C89651" (at 0 -2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "JLCImport:SMBJ26CA_C89651" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "SMBJ26CA TVS Diode 26V Bidirectional 600W SMB" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_keywords" "C89651 SMBJ26CA SMB TVS bidirectional 26V" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C89651" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "LRC" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part" "SMBJ26CA" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "SMBJ26CA_C89651_0_1"
+      (polyline
+        (pts (xy -2.540005 1.270003) (xy 0 0) (xy -2.540005 -1.270003) (xy -2.540005 1.270003))
+        (stroke (width 0.254) (type solid))
+        (fill (type outline))
+      )
+      (polyline
+        (pts (xy 2.540005 1.270003) (xy 0 0) (xy 2.540005 -1.270003) (xy 2.540005 1.270003))
+        (stroke (width 0.254) (type solid))
+        (fill (type outline))
+      )
+      (polyline
+        (pts (xy -0.508001 1.524003) (xy -0.508001 1.524003) (xy 0 1.524003) (xy 0 -1.524003) (xy 0.508001 -1.524003) (xy 0.508001 -1.524003))
+        (stroke (width 0.254) (type solid))
+        (fill (type none))
+      )
+      (pin unspecified line (at 5.08001 0 180) (length 2.540005)
+        (name "A" (effects (font (size 1.27 1.27)) hide))
+        (number "2" (effects (font (size 1.27 1.27)) hide))
+      )
+      (pin unspecified line (at -5.08001 0 0) (length 2.540005)
+        (name "K" (effects (font (size 1.27 1.27)) hide))
+        (number "1" (effects (font (size 1.27 1.27)) hide))
+      )
+    )
+  )
   )
 	(junction
 		(at 341.63 46.99)
@@ -16746,16 +16860,7 @@
 		)
 		(uuid "1918b559-c9d3-4962-86e3-549c48526d6e")
 	)
-	(wire
-		(pts
-			(xy 34.32 39.37) (xy 34.32 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19ef2bd9-247e-428f-bfad-5f96eacd8396")
-	)
+	
 	(wire
 		(pts
 			(xy 55.88 110.49) (xy 64.77 110.49)
@@ -23574,69 +23679,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:+24V")
-		(at 34.32 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "849fbdbb-a4ff-41f6-ae0e-f15087ae4882")
-		(property "Reference" "#PWR01"
-			(at 34.32 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+24V"
-			(at 33.812 35.052 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.32 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.32 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 34.32 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9347e818-b563-48bb-9982-b420d9c9f0f7")
-		)
-		(instances
-			(project "SampleCircuit"
-				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
+	
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
@@ -29021,7 +29064,336 @@
 				)
 			)
 		)
-	)	(sheet_instances
+	)	
+
+  (symbol
+		(lib_id "power:+24V")
+		(at 34.32 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "849fbdbb-a4ff-41f6-ae0e-f15087ae4882")
+		(property "Reference" "#PWR01"
+			(at 34.32 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+24V"
+			(at 34.32 24.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 34.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9347e818-b563-48bb-9982-b420d9c9f0f7")
+		)
+		(instances
+			(project "SampleCircuit"
+				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+  (symbol
+		(lib_id "JLCImport:SS34_C8678")
+		(at 34.32 34.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c01f8514-a231-488c-a319-c3ee560c669a")
+		(property "Reference" "D9"
+			(at 38.13 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SS34"
+			(at 30.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCImport:SS34_C8678"
+			(at 34.32 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.32 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 34.32 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C8678"
+			(at 34.32 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c3a99707-ccef-442c-9b69-e17655abe1d5")
+		)
+		(pin "1"
+			(uuid "867682fc-fb4c-484b-85f8-82054adebea5")
+		)
+		(instances
+			(project "SampleCircuit"
+				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+  (wire
+		(pts
+			(xy 34.32 39.37) (xy 34.32 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f9ba501-da0f-44f7-a133-2cd484a7ef0d")
+	)
+
+  (symbol
+		(lib_id "JLCImport:SMBJ26CA_C89651")
+		(at 27.94 49.53 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c279b630-8163-4c0c-a491-4461199f92af")
+		(property "Reference" "D10"
+			(at 31.75 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMBJ26CA"
+			(at 24.13 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCImport:SMBJ26CA_C89651"
+			(at 27.94 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C89651"
+			(at 27.94 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "56927061-240f-4dce-99d3-04ea1b8c8009")
+		)
+		(pin "1"
+			(uuid "ab459cb8-2f7e-4373-a3bb-3d19557f42a1")
+		)
+		(instances
+			(project "SampleCircuit"
+				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+  (symbol
+		(lib_id "power:GND")
+		(at 27.94 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3470873f-e68e-42b0-b32b-36910bad1d52")
+		(property "Reference" "#PWR104"
+			(at 27.94 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "18a91f7d-56e3-4d8f-84a5-5b0e7f1e3fc1")
+		)
+		(instances
+			(project "SampleCircuit"
+				(path "/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7"
+					(reference "#PWR104")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+  (junction
+		(at 34.32 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44c454dd-6126-4a67-a461-7eef99bb62dc")
+	)
+
+  (wire
+		(pts
+			(xy 27.94 43.18) (xy 27.94 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f9ba500-da0f-44f7-a133-2cd484a7ef0c")
+	)
+
+  (wire
+		(pts
+			(xy 27.94 43.18) (xy 34.32 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99228597-3fca-410d-a33c-ad3228791363")
+	)
+
+  (wire
+		(pts
+			(xy 27.94 54.61) (xy 27.94 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99fbce43-2589-4817-b06b-ef8ca0356a40")
+	)(sheet_instances
 		(path "/"
 			(page "1")
 		)
