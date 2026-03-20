@@ -73,9 +73,18 @@ changes to the board.
               distance = sqrt((cx-hx)^2 + (cy-hy)^2)
               ASSERT distance >= R
 
-2d. Mounting hole placement strategy:
-    - Default: one hole per corner, inset from edges
-    - Inset distance should be at least keepout_radius + 2mm
+2d. DEFAULT FASTENER SIZE: M6. Use M6 mounting holes unless the board
+    size or application requires a smaller fastener. M6 provides good
+    mechanical strength for most enclosure mounting scenarios.
+
+2e. HOLE INSET: Mounting holes should be inset 10mm from each board
+    edge where allowable. If 10mm inset would place the hole keepout
+    zone outside the board or conflict with a board cutout (e.g.,
+    antenna notch), shift the hole along the edge to the nearest
+    clear position.
+
+2f. Mounting hole placement strategy:
+    - Default: one hole per corner, inset 10mm from each edge
     - If a corner conflicts with a board cutout or large component,
       shift the hole along the edge (not into the board interior)
     - NEVER move mounting holes to accommodate components — move
@@ -225,19 +234,29 @@ changes to the board.
 
 7. Placement Workflow
 -----------------------
-7a. The correct order for automated placement is:
-    1. Remove existing copper pour zones
-    2. Create board outline (with cutouts if needed)
-    3. Place mounting holes
-    4. Place the largest / most-connected IC first (usually MCU)
-    5. Place that IC's decoupling caps and support components
-    6. Place connectors at board edges
-    7. Place remaining ICs grouped by function, largest first
-    8. Place each IC's passives immediately after the IC
-    9. Run overlap check — fix any violations
-    10. Run mounting hole keepout check — fix any violations
-    11. Run edge clearance check — fix any violations
-    12. Reposition silkscreen text — fix any pad overlaps
+7a. BOARD SIZE DETERMINATION: Do NOT pre-define the board size.
+    Place all components first in a compact layout, then determine
+    the board dimensions:
+    1. Calculate the bounding box of all placed components
+    2. Add margins: 10mm on each edge for mounting hole inset
+    3. Add antenna cutout depth if applicable
+    4. Round BOTH width and height UP to the nearest 10mm
+    This ensures the board is always the minimum practical size.
+
+7b. The correct order for automated placement is:
+    1. Remove existing board outline, copper pour zones, and holes
+    2. Place the largest / most-connected IC first (usually MCU)
+    3. Place that IC's decoupling caps and support components
+    4. Place connectors at board edges (use temporary edge estimate)
+    5. Place remaining ICs grouped by function, largest first
+    6. Place each IC's passives immediately after the IC
+    7. Calculate board size from component bounding box (per 7a)
+    8. Create board outline (with cutouts if needed)
+    9. Place mounting holes at 10mm inset from edges
+    10. Run overlap check — fix any violations
+    11. Run mounting hole keepout check — fix any violations
+    12. Run edge clearance check — fix any violations
+    13. Reposition silkscreen text — fix any pad overlaps
     13. Hide value fields that cause clutter
     14. Recreate GND copper pour zones
     15. Refill zones
