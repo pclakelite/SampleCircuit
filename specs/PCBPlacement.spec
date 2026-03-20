@@ -339,21 +339,44 @@ changes to the board.
 7a. GND copper pour should be created on both F.Cu and B.Cu for
     2-layer boards.
 
-7b. The zone outline MUST match the board outline including any
+7b. ONE ZONE PER COPPER LAYER: Each copper layer gets exactly ONE GND
+    zone. Never create two copper pour zones on the same layer with the
+    same priority — KiCad will flag this as a DRC error ("Copper zones
+    intersect, must have distinct priorities"). When creating zones
+    programmatically, explicitly set the layer for each zone:
+      zone_fcu.layers = [BoardLayer.BL_F_Cu]   # front copper only
+      zone_bcu.layers = [BoardLayer.BL_B_Cu]    # back copper only
+    Do NOT assign both zones to the same layer. Verify after creation
+    that each copper layer has at most one GND pour zone.
+
+7c. The zone outline MUST match the board outline including any
     cutouts (antenna notches, etc.). Do not fill copper into cutout
     areas.
 
-7c. Zone parameters:
+7d. Zone parameters:
     - Net: GND
     - Min thickness: 0.25mm
     - Clearance: 0.2mm (or per design rules)
     - Priority: 0 (lowest, so signal traces take precedence)
 
-7d. After all placement is complete, call board.refill_zones(block=True)
+7e. KEEPOUT RULE AREAS vs COPPER ZONES: Mounting hole keepout zones
+    (rule areas, type ZT_RULE_AREA) are separate from copper pour zones
+    (type ZT_COPPER). Rule areas restrict where copper is filled but do
+    not conflict with copper zones — they can overlap on the same layer
+    without a DRC error. Only copper-type zones of the same priority on
+    the same layer cause the "intersecting zones" DRC violation.
+
+7f. After all placement is complete, call board.refill_zones(block=True)
     to fill the copper pour around the final component positions.
 
-7e. Remove existing zones before re-creating them after major placement
+7g. Remove existing zones before re-creating them after major placement
     changes to avoid stale fill artifacts.
+
+7h. VERIFICATION: After zone creation, confirm:
+    - Exactly one GND copper zone per copper layer
+    - No two copper zones on the same layer share the same priority
+    - All keepout rule areas are type ZT_RULE_AREA (not ZT_COPPER)
+    - Run DRC to check for zone intersection errors
 
 
 8. Placement Workflow
