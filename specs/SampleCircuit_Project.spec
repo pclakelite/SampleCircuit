@@ -66,7 +66,7 @@
 # IO1  | SCL       | Ports:SCL       | I2C clock (RTC RV-3028)
 # IO2  | SDA       | Ports:SDA       | I2C data (RTC RV-3028)
 #
-# I2C bus has 4.7K pull-up resistors to +3.3V (R95 on SCL, R96 on SDA, in main schematic).
+# I2C bus has 10K pull-up resistors to +3.3V (included in rtc_rv3028 template).
 # SPI bus is shared between flash (CS_FLASH) and SD card (CS_SD).
 # Each has a separate chip select line.
 
@@ -387,10 +387,9 @@
 #
 # 11J. I2C PULL-UP RESISTORS
 # ----------------------------
-# Pull-ups are in the main schematic (NOT in any template):
-#   R95 = 4.7K on SCL to +3.3V
-#   R96 = 4.7K on SDA to +3.3V
-# One set per bus — do NOT add additional pull-ups in I2C device templates.
+# The RV-3028 RTC template (rtc_rv3028) includes its own I2C pull-up
+# resistors (R89=10K on SCL, R94=10K on SDA, pulled to +3.3V).
+# Do NOT add additional pull-ups on the ESP32 side — one set per bus.
 #
 # 11K. NS4168 CTRL-BCLK ACCIDENTAL SHORT (March 2026)
 # ----------------------------------------------------
