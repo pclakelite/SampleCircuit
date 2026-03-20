@@ -592,3 +592,76 @@ changes to the board.
                     break
 
         return errors
+
+
+13. Autorouting
+-----------------
+    Autorouting is a SEPARATE, EXPLICIT step — it is NOT part of the
+    placement workflow (section 8). Traces are never automatically created
+    or deleted during component placement. Autorouting runs ONLY when
+    explicitly requested by the user.
+
+13a. PLACEMENT AND ROUTING ARE INDEPENDENT: Moving components, adjusting
+    silkscreen, adding mounting holes, or any other placement operation
+    must NEVER trigger autorouting. Existing traces are left untouched
+    during placement changes. The user decides when to route or re-route.
+
+13b. NET CLASSES: Before autorouting, define net classes with appropriate
+    trace widths based on the circuit's electrical requirements and the
+    PCB fabricator's capabilities. Typical net classes:
+
+      Net Class   | Trace Width | Use Case
+      Power       | 0.5mm+      | Supply rails (+24V, +12V, +5V, +3.3V)
+      Signal      | 0.25mm      | Digital signals (SPI, I2C, I2S, UART, GPIO)
+      Default     | 0.25mm      | Everything not explicitly classified
+
+    Minimum trace widths must meet the fabricator's specification:
+      Fabricator  | Absolute Min | Recommended Min
+      JLCPCB      | 0.127mm      | 0.2mm
+      OSH Park    | 0.152mm      | 0.2mm
+      PCBWay      | 0.1mm        | 0.2mm
+
+    Power nets carry current and must be sized for the expected load.
+    Use a trace width calculator to determine the minimum width for
+    the maximum current on each rail. When in doubt, use wider traces
+    for power — there is no penalty for oversizing power traces.
+
+13c. NET CLASS ASSIGNMENT: Assign nets to classes based on their prefix
+    or function:
+    - Power class: nets starting with '+' (e.g., +3.3V, +5V, +12V, +24V)
+    - Signal class: all other named nets (excluding GND and unconnected)
+    - GND: handled by copper pour, not routed as traces
+
+    Net class definitions are stored in the KiCad board's design rules
+    and are exported with the Specctra DSN file for autorouter use.
+
+13d. AUTOROUTING WORKFLOW (Freerouting):
+    1. Verify placement passes all checks (section 12) before routing
+    2. Export the board as Specctra DSN:
+         pcbnew.ExportSpecctraDSN(board, 'board.dsn')
+    3. Run Freerouting in headless mode:
+         java -jar freerouting.jar -de board.dsn -do board.ses -mp 100 -mt 1
+       The -mt 1 flag uses single-threaded optimization (recommended —
+       multi-threaded mode is known to produce clearance violations).
+    4. Import the Specctra session file:
+         pcbnew.ImportSpecctraSES(board, 'board.ses')
+         pcbnew.SaveBoard('board.kicad_pcb', board)
+    5. Reload the board in KiCad (File → Revert)
+    6. Refill copper zones (press B)
+    7. Run DRC to verify no clearance or connectivity violations
+
+13e. AFTER AUTOROUTING: Review the results before accepting them:
+    - Check for unrouted nets (Freerouting reports these in its output)
+    - Verify power traces use the correct width
+    - Check via count — excessive vias increase manufacturing cost and
+      reduce signal integrity
+    - Run KiCad DRC for clearance and connectivity violations
+    - Unrouted nets may need manual routing or a placement adjustment
+
+13f. RE-ROUTING AFTER PLACEMENT CHANGES: If components are moved after
+    routing, the existing traces may become invalid. The user must
+    explicitly choose one of:
+    1. Delete all traces and re-run autorouter from scratch
+    2. Manually fix only the affected traces
+    3. Accept the current routing if the change was minor
+    This decision is always made by the user — never automatically.
