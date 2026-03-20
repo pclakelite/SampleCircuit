@@ -411,6 +411,11 @@ changes to the board.
     This ensures the board is always the minimum practical size.
 
 8b. The correct order for automated placement is:
+    0. CHECK FIRST: If a board outline and mounting holes already exist,
+       SKIP steps 1-6 and proceed directly to step 7. Only remove and
+       re-create the board outline, mounting holes, and copper pour zones
+       if the user EXPLICITLY asks for it (e.g., board size change,
+       hole repositioning). Existing board geometry is assumed correct.
     1. Remove existing board outline, copper pour zones, and holes
     2. Analyze netlist: identify hub IC and signal connections (S3)
     3. Calculate board size from component bounding box (per 8a)
