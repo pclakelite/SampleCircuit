@@ -85,13 +85,26 @@ changes to the board.
 
 2f. MINIMUM 4 MOUNTING HOLES: Every board must have at least 4 mounting
     holes for proper mechanical support. Default placement is one hole per
-    corner, inset 10mm from each edge. If a corner conflicts with a board
-    cutout or large component, shift the hole along the nearest edge (not
-    into the board interior) until it clears the obstruction. The hole
-    must remain on the board perimeter — do not omit it.
+    corner, inset 10mm from each edge.
 
-2g. NEVER move mounting holes to accommodate components — move
-    components instead. Mechanical mounting points are fixed.
+2g. MOUNTING HOLES HAVE HIGHEST PLACEMENT PRIORITY: Mounting holes are
+    placed BEFORE components in the placement workflow. If a component
+    would conflict with a corner hole's keepout zone, the COMPONENT must
+    move — not the hole. The placement algorithm must:
+    1. Place all 4 corner holes first (10mm inset from each edge)
+    2. Mark each hole's keepout circle as a no-go zone
+    3. When placing connectors along an edge, calculate the usable edge
+       length by excluding the keepout zones at each end, then distribute
+       connectors evenly within the remaining space
+    4. If a corner conflicts with a board cutout (e.g., antenna notch),
+       shift the hole along the nearest edge until it clears — do not
+       omit the hole
+
+2h. Verification: after all placement, confirm:
+    - At least 4 mounting holes exist on Edge.Cuts
+    - Every hole is within 15mm of a board corner (shifted holes still
+      count as "corner" holes if they are on the perimeter)
+    - No component bounding box intersects any hole's keepout circle
 
 
 3. Ratsnest and Routing Optimization
@@ -343,22 +356,24 @@ changes to the board.
 8b. The correct order for automated placement is:
     1. Remove existing board outline, copper pour zones, and holes
     2. Analyze netlist: identify hub IC and signal connections (S3)
-    3. Place the hub IC first (most signal connections)
-    4. Place signal-connected ICs adjacent to hub (minimize ratsnest)
-    5. Place each IC's decoupling caps and support components
-    6. Place connectors at board edges (use temporary edge estimate)
-    7. Place remaining ICs grouped by function, largest first
-    8. Place each IC's passives immediately after the IC
-    9. Run ratsnest check — adjust positions to minimize signal distances
-    10. Calculate board size from component bounding box (per 8a)
-    11. Create board outline (with cutouts if needed)
-    12. Place mounting holes at 10mm inset from edges
-    13. Run overlap check — fix any violations
-    14. Run mounting hole keepout check — fix any violations
-    15. Run edge clearance check — fix any violations
-    16. Reposition silkscreen text — fix any pad overlaps
-    17. Hide value fields that cause clutter
-    18. Recreate GND copper pour zones
+    3. Calculate board size from component bounding box (per 8a)
+    4. Create board outline (with cutouts if needed)
+    5. PLACE MOUNTING HOLES FIRST at 4 corners, 10mm inset (per 2f-2g)
+    6. Mark hole keepout zones as no-go areas for all subsequent steps
+    7. Place the hub IC first (most signal connections)
+    8. Place signal-connected ICs adjacent to hub (minimize ratsnest)
+    9. Place each IC's decoupling caps and support components
+    10. Place connectors at board edges — calculate usable edge length
+        by excluding hole keepout zones, then distribute evenly (per 1e)
+    11. Place remaining ICs grouped by function, largest first
+    12. Place each IC's passives immediately after the IC
+    13. Run ratsnest check — adjust positions to minimize signal distances
+    14. Run overlap check — fix any violations
+    15. Run mounting hole keepout check — fix any violations
+    16. Run edge clearance check — fix any violations
+    17. Reposition silkscreen text — fix any pad overlaps
+    18. Hide value fields that cause clutter
+    19. Recreate GND copper pour zones
     19. Refill zones
 
 8c. Each functional group should be committed separately so the user
