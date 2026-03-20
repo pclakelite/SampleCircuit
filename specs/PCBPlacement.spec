@@ -351,7 +351,12 @@ changes to the board.
 
 7c. The zone outline MUST match the board outline including any
     cutouts (antenna notches, etc.). Do not fill copper into cutout
-    areas.
+    areas. The zone outline MUST be set back from the board edge by
+    at least 0.2mm (recommended 0.3mm) on all sides. Copper extending
+    to the board edge can be nicked or exposed during board cutting
+    (routing or V-scoring), causing copper burrs, delamination, or
+    shorts to mounting hardware. Most fabricators require this clearance
+    and will flag edge-touching copper as a DRC error.
 
 7d. Zone parameters:
     - Net: GND
