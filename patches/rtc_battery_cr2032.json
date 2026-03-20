@@ -1,0 +1,9 @@
+{
+  "description": "Fix RTC battery value: CR1220 → CR2032 to match CR2032-BS-2-1 holder footprint",
+  "replace_elements": [
+    {
+      "match": {"type": "symbol", "ref": "B3"},
+      "with": "(symbol\n\t\t(lib_id \"JLCImport:CR2032-BS-2-1\")\n\t\t(at 220.98 261.62 0)\n\t\t(unit 1)\n\t\t(exclude_from_sim no)\n\t\t(in_bom yes)\n\t\t(on_board yes)\n\t\t(dnp no)\n\t\t(uuid \"04bca271-b111-4948-a745-d9a1dd1f4e84\")\n\t\t(property \"Reference\" \"B3\"\n\t\t\t(at 220.98 257.81 0)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Value\" \"CR2032\"\n\t\t\t(at 220.98 265.43 0)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Footprint\" \"JLCImport:CR2032-BS-2-1\"\n\t\t\t(at 220.98 261.62 0)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(hide yes)\n\t\t\t)\n\t\t)\n\t\t(property \"Datasheet\" \"\"\n\t\t\t(at 220.98 261.62 0)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"Description\" \"\"\n\t\t\t(at 220.98 261.62 0)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(property \"LCSC\" \"C70376\"\n\t\t\t(at 220.98 261.62 0)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(hide yes)\n\t\t\t)\n\t\t)\n\t\t(pin \"1\"\n\t\t\t(uuid \"53329d4f-2e72-4f82-a22b-cd2ce15fca8c\")\n\t\t)\n\t\t(pin \"2\"\n\t\t\t(uuid \"ebde3568-b676-4cc9-b6f7-529f838e13bd\")\n\t\t)\n\t\t(instances\n\t\t\t(project \"SampleCircuit\"\n\t\t\t\t(path \"/f1a2b3c4-d5e6-7f89-0a1b-c2d3e4f5a6b7\"\n\t\t\t\t\t(reference \"B3\")\n\t\t\t\t\t(unit 1)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t)"
+    }
+  ]
+}

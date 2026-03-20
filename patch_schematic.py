@@ -176,12 +176,15 @@ def apply_patch(sch_path, patch):
 
 
 def main():
-    if len(sys.argv) < 3:
-        print("Usage: python patch_schematic.py <file.kicad_sch> <patch.json>")
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    reload_kicad = "--reload" in sys.argv
+
+    if len(args) < 2:
+        print("Usage: python patch_schematic.py <file.kicad_sch> <patch.json> [--reload]")
         sys.exit(1)
 
-    sch_path = sys.argv[1]
-    patch_path = sys.argv[2]
+    sch_path = args[0]
+    patch_path = args[1]
 
     if not os.path.exists(sch_path):
         print(f"ERROR: Schematic not found: {sch_path}")
@@ -222,6 +225,14 @@ def main():
             sys.exit(1)
     else:
         print("  (validate_sch.py not found, skipping)")
+
+    # Auto-reload KiCad if requested
+    if reload_kicad:
+        try:
+            from kicad_patch.kicad_ipc import revert_schematic
+            revert_schematic()
+        except Exception as e:
+            print(f"WARNING: Could not reload KiCad: {e}")
 
 
 if __name__ == "__main__":

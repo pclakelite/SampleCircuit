@@ -481,9 +481,9 @@ def build_schematic():
         footprint="JLCImport:0805W8F1001T5E", lcsc="C17513",
         ref_offset=(0, -2.54), val_offset=(-0.254, 2.794)))
 
-    # B3 — CR1220 coin cell holder (ref above, value below)
+    # B3 — CR2032 coin cell holder (ref above, value below)
     symbols.append(make_component("B3", "JLCImport:CR2032-BS-2-1",
-        B3_X, B3_Y, "CR1220",
+        B3_X, B3_Y, "CR2032",
         footprint="JLCImport:CR2032-BS-2-1", lcsc="C70376",
         ref_offset=(0, -3.81), val_offset=(0, 3.81)))
 

@@ -164,7 +164,7 @@ def read_lib_symbols():
         ("0805W8F1104T5E", True),        # 110k resistor (upper feedback)
         ("0805W8F1002T5E", True),        # 10k resistor (lower feedback)
         ("GRM32ER7YA106KA12L", True),    # 10uF 35V cap
-        ("1206X476M160NT", True),        # 47uF 16V cap
+        ("GRM32EC81E476KE15L", True),    # 47uF 25V cap (upgraded from 16V for 12V rail derating)
         ("SS34_C8678", True),            # Schottky diode (reverse polarity)
         ("SMBJ26CA_C89651", True),       # TVS diode (transient suppression)
     ]
@@ -513,10 +513,11 @@ def build_schematic():
         footprint="JLCImport:GRM32ER7YA106KA12L", lcsc="C97973",
         ref_offset=(-3.81, 0), val_offset=(3.81, 0)))
 
-    # C3 — 47uF 16V output cap (angle=270, vertical, pin1 top)
-    symbols.append(make_component("C3", "JLCImport:1206X476M160NT",
-        C3_X, C3_Y, "47uF 16V", angle=270,
-        footprint="JLCImport:1206X476M160NT", lcsc="C172351",
+    # C3 — 47uF 25V output cap (angle=270, vertical, pin1 top)
+    # Upgraded from 16V to 25V for proper derating on 12V rail (2.08x vs 1.33x)
+    symbols.append(make_component("C3", "JLCImport:GRM32EC81E476KE15L",
+        C3_X, C3_Y, "47uF 25V", angle=270,
+        footprint="JLCImport:GRM32EC81C476KE15L", lcsc="C86211",
         ref_offset=(-3.81, 0), val_offset=(3.81, 0)))
 
     # D1 — SS34 Schottky (series reverse polarity, vertical angle=270)

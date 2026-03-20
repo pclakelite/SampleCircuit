@@ -90,12 +90,12 @@
 #     - Hide pin_numbers AND pin_names (passive — no useful pin names)
 #     - Horizontal symbol (pins at ±5.08, y=0) — rotate angle=270 for vertical
 
-# [B3] CR1220 Coin Cell Holder
+# [B3] CR2032 Coin Cell Holder
 #   LCSC:      C70376
 #   Symbol:    JLCImport:CR2032-BS-2-1
 #   Package:   THT holder
 #   JLCPCB:    Extended part
-#   Battery:   CR1220 (3V, ~40mAh) — >10 years at 40nA
+#   Battery:   CR2032 (3V, ~40mAh) — >10 years at 40nA
 #   Nets:      Pin1 (POS) → R46, Pin2 (NEG) → GND
 #   lib_symbol notes:
 #     - Hide pin_numbers AND pin_names (just "1"/"2" — clutters display)
@@ -127,7 +127,7 @@
 # -----|------------------|-----------|-------|----------|----------
 # U8   | RV-3028-C7       | —         | SON-8 | C3019759 | Extended
 # C10  | Capacitor        | 100nF 50V | 0805  | C49678   | Basic
-# B3   | Coin cell holder | CR1220    | THT   | C70376   | Extended
+# B3   | Coin cell holder | CR2032    | THT   | C70376   | Extended
 # R46  | Resistor         | 1k 1%     | 0805  | C17513   | Basic
 # R41  | Resistor         | 10k 1%    | 0805  | C17414   | Basic
 #
@@ -147,7 +147,7 @@
 # R41 (10k)    | (180.34, 96.52)     | 0     | Horizontal, near EVI pin
 # C10 (100nF)  | (175.26, 106.68)    | 90    | Vertical (pin1 top, pin2 bottom)
 # R46 (1k)     | (193.04, 101.60)    | 0     | Horizontal, VBACKUP chain
-# B3 (CR1220)  | (210.82, 101.60)    | 0     | Far right, battery holder
+# B3 (CR2032)  | (210.82, 101.60)    | 0     | Far right, battery holder
 #
 # Port symbols (Ports library — see TemplateCreation.spec §7):
 #   SCL        | (128.27, 100.33)    | 0     | Pin at (130.81, 100.33)

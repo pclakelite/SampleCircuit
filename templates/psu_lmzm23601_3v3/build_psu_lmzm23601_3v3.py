@@ -75,6 +75,13 @@ C34_X, C34_Y = 125.73, 106.68
 C34_P2 = (125.73, 101.60)  # pin 2 top
 C34_P1 = (125.73, 111.76)  # pin 1 bottom
 
+# C36 GRM32ER7YA106KA12L second input cap (vertical default)
+C36_X, C36_Y = 119.38, 106.68
+C36_P2 = (119.38, 101.60)  # pin 2 top (VIN rail)
+C36_P1 = (119.38, 111.76)  # pin 1 bottom (GND)
+
+GND_IN3_X, GND_IN3_Y = 119.38, 116.84
+
 # Feedback divider and output cap
 R31_X, R31_Y = 170.18, 118.11          # 10k, angle=270
 R31_P1 = (170.18, 113.03)              # top (to VOUT)
@@ -455,6 +462,9 @@ def build_schematic():
     symbols.append(make_component("C34", "JLCImport:GRM32ER7YA106KA12L", C34_X, C34_Y, "10uF 35V",
                                   footprint="JLCImport:GRM32ER7YA106KA12L", lcsc="C97973",
                                   ref_offset=(-3.81, 0), val_offset=(3.81, 0)))
+    symbols.append(make_component("C36", "JLCImport:GRM32ER7YA106KA12L", C36_X, C36_Y, "10uF 35V",
+                                  footprint="JLCImport:GRM32ER7YA106KA12L", lcsc="C97973",
+                                  ref_offset=(-3.81, 0), val_offset=(3.81, 0)))
     symbols.append(make_component("R31", "JLCImport:0805W8F1002T5E", R31_X, R31_Y, "10k",
                                   footprint="JLCImport:0805W8F1002T5E", lcsc="C17414", angle=270,
                                   ref_offset=(3.81, 0), val_offset=(-3.81, 0)))
@@ -488,6 +498,9 @@ def build_schematic():
     symbols.append(make_power("#PWR06", "power:GND", "GND", GND_OUT_X, GND_OUT_Y,
                               ref_pos=(GND_OUT_X, round(GND_OUT_Y + 6.35, 2)),
                               val_pos=(GND_OUT_X, round(GND_OUT_Y + 3.81, 2))))
+    symbols.append(make_power("#PWR07", "power:GND", "GND", GND_IN3_X, GND_IN3_Y,
+                              ref_pos=(GND_IN3_X, round(GND_IN3_Y + 6.35, 2)),
+                              val_pos=(GND_IN3_X, round(GND_IN3_Y + 3.81, 2))))
 
     symbols_str = "\n\n".join(symbols)
 
@@ -532,6 +545,7 @@ def build_schematic():
         (193.04, 100.33, 193.04, 106.68),
         (198.12, 129.54, 190.50, 129.54),
         (135.89, 104.14, 135.89, 101.60),
+        (119.38, 111.76, 119.38, 116.84),    # C36 pin1 to GND
         (170.18, 106.68, 193.04, 106.68),
         (170.18, 123.19, 176.53, 123.19),
         (163.83, 93.98, 167.64, 93.98),
@@ -551,6 +565,7 @@ def build_schematic():
         (170.18, 106.68),
         (193.04, 106.68),
         (114.30, 101.60),
+        (119.38, 101.60),     # C36 pin2 on VIN rail
         (176.53, 104.14),
     ]
     junctions = "\n".join(
@@ -602,7 +617,7 @@ if __name__ == "__main__":
         f.write(content)
 
     print(f"Written: {output_path}")
-    print("Components: U5, D8, C11, C34, R31, R32, C35")
+    print("Components: U5, D8, C11, C34, C36, R31, R32, C35")
     print("Power symbols: +12V, +3.3V, 5x GND")
     print("No-connects: PGOOD, DNC x3")
     print("All positions on 1.27mm grid")
