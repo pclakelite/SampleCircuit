@@ -306,11 +306,26 @@ changes to the board.
 
 6d. KEEPOUT ZONE around antenna: follow the manufacturer's specified
     keepout distances. At minimum, the keepout zone must exclude:
-    - Copper traces, pours, and vias
+    - Copper traces, pours, and vias (on ALL copper layers)
     - Components and their courtyards
-    - Ground plane on all copper layers
-    The GND copper pour zone outline must be shaped to exclude the
-    antenna keepout area.
+    - Ground plane on all copper layers (F.Cu AND B.Cu)
+    Implementation requires TWO actions:
+    1. Shape the GND copper pour zone outline on EVERY copper layer to
+       exclude the antenna area. Both F.Cu and B.Cu pours must have the
+       antenna cutout — ground plane under the antenna on ANY layer
+       degrades antenna performance.
+    2. Create a keepout rule area (ZT_RULE_AREA) covering the antenna
+       zone with keepout_copper=True, keepout_tracks=True, and
+       keepout_vias=True. This prevents the autorouter or manual routing
+       from placing traces or vias in the antenna zone.
+
+6d-pullback. GROUND PLANE PULLBACK: The copper pour must be pulled back
+    at least 1mm beyond the antenna area boundary (not just flush with
+    it). Additionally, extend the keepout zone 2mm beyond each side of
+    the antenna module to prevent fringing copper from coupling to the
+    antenna. For example, if the antenna module spans x=141-159 and the
+    antenna area starts at y=130, the copper pour and keepout should
+    start at y=129 and extend 2mm past the module sides (x=139-161).
 
 6e. Antenna orientation: orient the module so the antenna feed point
     is closest to the board edge. Consult the device datasheet for
