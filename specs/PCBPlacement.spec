@@ -172,6 +172,37 @@ changes to the board.
 4f. After ANY placement change, re-run the full overlap check before
     committing. Fixing one overlap can introduce another.
 
+4g. MINIMUM PAD-TO-PAD CLEARANCE (solder bridge prevention): pads
+    belonging to different components must maintain a minimum edge-to-edge
+    clearance to prevent solder bridging during assembly.
+
+    Default minimum clearances:
+    - 0.20mm pad-to-pad (IPC Class 2 manufacturing)
+    - 0.25mm courtyard-to-courtyard (IPC-7351 nominal density)
+
+    These values may be tightened for high-density designs (down to 0.10mm
+    for IPC Class 3 / HDI), but must be explicitly documented.
+
+    Verification algorithm: for every pad on the board, compute the
+    minimum edge-to-edge distance to every pad owned by a DIFFERENT
+    footprint. Report any pair below the threshold:
+
+      MIN_PAD_GAP = 0.20  # mm
+      for i in range(len(all_pads)):
+          for j in range(i+1, len(all_pads)):
+              if parent_fp[i] == parent_fp[j]: continue
+              gap = edge_to_edge_distance(pad_bbox[i], pad_bbox[j])
+              if gap < MIN_PAD_GAP:
+                  ERROR(f"{ref[i]} pad <-> {ref[j]} pad: {gap:.2f}mm")
+
+    Edge-to-edge distance between two axis-aligned rectangles:
+      dx = max(0, max(a.left - b.right, b.left - a.right))
+      dy = max(0, max(a.top - b.bottom, b.top - a.bottom))
+      gap = sqrt(dx*dx + dy*dy)
+
+    Note: NPTH (mounting hole) pads and pads on different board sides
+    (F.Cu vs B.Cu only) may be excluded from this check.
+
 
 5. Functional Grouping
 ------------------------

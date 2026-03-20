@@ -1189,7 +1189,7 @@
 	(footprint "JLCImport:CL21A106KAYNNNE"
 		(layer "F.Cu")
 		(uuid "31e83023-07fe-403a-9713-0f9f8ba032a5")
-		(at 143 96)
+		(at 144 96)
 		(descr "10uF (106) ±10% 25V")
 		(tags "C0805 C15850 CL21A106KAYNNNE SAMSUNG")
 		(property "Reference" "C105"
@@ -3423,7 +3423,7 @@
 	(footprint "JLCImport:TS665WS_C2686403"
 		(layer "F.Cu")
 		(uuid "72067124-cf1d-4e84-8b1d-510cf374f474")
-		(at 135 110 90)
+		(at 135 110.5 90)
 		(descr "TS665WS; KEY-SMD_L6.0-W6.0-LS6.6; SHOU HAN")
 		(tags "C2686403 KEY-SMD_L6.0-W6.0-LS6.6 SHOU HAN TS665WS")
 		(property "Reference" "SW2"
