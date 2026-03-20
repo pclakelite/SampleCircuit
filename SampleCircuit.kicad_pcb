@@ -10760,6 +10760,17 @@
 		(uuid "55e56ef6-200e-4f44-973e-7eb994cfac11")
 	)
 	(gr_circle
+		(center 110 126)
+		(end 113.25 126)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "5be466df-e54c-4315-9106-d44bc259f398")
+	)
+	(gr_circle
 		(center 190 56)
 		(end 193.1 56)
 		(stroke

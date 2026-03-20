@@ -83,12 +83,15 @@ changes to the board.
     antenna notch), shift the hole along the edge to the nearest
     clear position.
 
-2f. Mounting hole placement strategy:
-    - Default: one hole per corner, inset 10mm from each edge
-    - If a corner conflicts with a board cutout or large component,
-      shift the hole along the edge (not into the board interior)
-    - NEVER move mounting holes to accommodate components — move
-      components instead. Mechanical mounting points are fixed.
+2f. MINIMUM 4 MOUNTING HOLES: Every board must have at least 4 mounting
+    holes for proper mechanical support. Default placement is one hole per
+    corner, inset 10mm from each edge. If a corner conflicts with a board
+    cutout or large component, shift the hole along the nearest edge (not
+    into the board interior) until it clears the obstruction. The hole
+    must remain on the board perimeter — do not omit it.
+
+2g. NEVER move mounting holes to accommodate components — move
+    components instead. Mechanical mounting points are fixed.
 
 
 3. Ratsnest and Routing Optimization
