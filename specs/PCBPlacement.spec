@@ -47,21 +47,35 @@ changes to the board.
 
 2. Mounting Holes
 -------------------
-2a. Mounting holes are placed as circles on the Edge.Cuts layer.
-    Drill diameter = screw clearance hole (e.g., M3=3.4mm, M4=4.5mm,
-    M5=5.5mm, M6=6.5mm).
+2a. Mounting holes are placed as NPTH (Non-Plated Through Holes) on
+    the Edge.Cuts layer. Drill diameter = screw clearance hole (e.g.,
+    M3=3.4mm, M4=4.5mm, M5=5.5mm, M6=6.5mm).
 
-2b. KEEPOUT ZONE: Every mounting hole must have a component-free zone
-    around it to clear the fastener head and washer. Minimum keepout
-    radius from hole center:
+2b. COPPER KEEPOUT around mounting holes: Every mounting hole must have
+    a copper-free zone on ALL copper layers to prevent accidental shorts
+    from serrated lockwashers, star washers, or screw heads. The copper
+    keepout radius = washer OD / 2 + 0.5mm clearance:
 
-      Screw Size | Hole Drill | Washer OD | Keepout Radius
-      M3         | 3.4mm      | 7mm       | 5.0mm
-      M4         | 4.5mm      | 9mm       | 6.0mm
-      M5         | 5.5mm      | 10mm      | 7.0mm
-      M6         | 6.5mm      | 12mm      | 8.0mm
+      Screw Size | Hole Drill | Washer OD | Copper Keepout Radius | Component Keepout Radius
+      M3         | 3.4mm      | 7mm       | 4.0mm                 | 5.0mm
+      M4         | 4.5mm      | 9mm       | 5.0mm                 | 6.0mm
+      M5         | 5.5mm      | 10mm      | 5.5mm                 | 7.0mm
+      M6         | 6.5mm      | 12mm      | 6.5mm                 | 8.0mm
 
-    No component bounding box may intersect the keepout circle.
+    The copper keepout prevents ground plane shorts. The component keepout
+    (larger) also clears the fastener head.
+
+    Implementation: create a keepout zone (rule area) on all copper layers
+    centered on each mounting hole, with radius = copper keepout radius.
+    This excludes the GND copper pour from filling near the hole.
+    Alternatively, shape the GND zone polygon to exclude circles around
+    each hole.
+
+    No component bounding box may intersect the component keepout circle.
+
+    NOTE: If chassis grounding is explicitly required (EMC/ESD), use a
+    PTH pad connected to GND instead of NPTH. This is a per-project
+    decision, not the default.
 
 2c. Keepout verification algorithm:
       for each hole (hx, hy) with keepout radius R:
