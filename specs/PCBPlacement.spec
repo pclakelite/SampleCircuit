@@ -694,6 +694,20 @@ changes to the board.
     This is a common post-autoroute cleanup step and should be performed
     before final verification.
 
+13h. UNROUTED NET CLEANUP: After autorouting, some nets may remain
+    unrouted (Freerouting reports these). For each unrouted net:
+    1. Identify all pads on the net and their positions
+    2. Check if an existing trace partially connects the net — only
+       the missing segment needs routing
+    3. Route using the net class trace width (power nets at power width,
+       signal nets at signal width)
+    4. Prefer routing on B.Cu (back copper) if the front is congested,
+       using a via to transition layers
+    5. After manual routing, refill zones and run DRC
+    Power nets (+3.3V, +5V, etc.) that cannot be autorouted are often
+    blocked by trace congestion — try routing on the opposite copper layer
+    with vias at each end.
+
 13f. RE-ROUTING AFTER PLACEMENT CHANGES: If components are moved after
     routing, the existing traces may become invalid. The user must
     explicitly choose one of:
