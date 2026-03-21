@@ -376,3 +376,61 @@ running KiCad instance and perform automated board operations.
 16h. Orient similar components consistently for easier assembly.
 16i. Leave space for silkscreen labels.
 16j. Consider thermal relief for power components.
+
+
+18. Working with Zones (Copper Pours)
+---------------------------------------
+18a. Get all zones:
+       zones = board.get_zones()
+
+18b. Filter copper zones by net:
+       gnd_zones = [z for z in zones if not z.is_rule_area()
+                    and z.net and z.net.name == "GND"]
+
+18c. Modify zone outline polygon:
+       from kipy.geometry import PolyLine, PolyLineNode, PolygonWithHoles, Vector2
+
+       new_outline = PolyLine()
+       for x_mm, y_mm in points:
+           new_outline.append(PolyLineNode.from_point(
+               Vector2.from_xy(int(x_mm * 1e6), int(y_mm * 1e6))
+           ))
+       new_outline.closed = True
+       new_poly = PolygonWithHoles()
+       new_poly.outline = new_outline
+       zone.outline = new_poly
+
+18d. Zone connection styles (from ZoneConnectionStyle enum):
+       ZCS_UNKNOWN    = 0
+       ZCS_INHERITED  = 1  (inherit from footprint/pad settings)
+       ZCS_NONE       = 2  (no connection to zone)
+       ZCS_THERMAL    = 3  (thermal relief spokes)
+       ZCS_FULL       = 4  (direct/solid connection, no relief)
+       ZCS_PTH_THERMAL = 5 (thermal only for PTH pads)
+
+18e. KNOWN BUG in kipy v0.5.0: The `thermal_spokes` property on
+     ZoneConnectionSettings returns a COPY, not a reference.
+     Setting width/gap via the wrapper has no effect:
+       # BROKEN — changes are lost:
+       conn = zone.connection
+       conn.thermal_spokes.width = 500000   # silently ignored
+       conn.thermal_spokes.gap = 500000     # silently ignored
+
+     WORKAROUND — access the protobuf directly:
+       proto = zone._proto.copper_settings.connection
+       proto.zone_connection = 3  # ZCS_THERMAL
+       proto.thermal_spokes.width.value_nm = 500000   # 0.5mm
+       proto.thermal_spokes.gap.value_nm = 500000     # 0.5mm
+
+18f. Always refill zones after modifying outlines or settings:
+       board.refill_zones(block=True)
+
+18g. Recommended thermal relief defaults:
+       spoke width: 0.5mm (500000 nm)
+       spoke gap:   0.5mm (500000 nm)
+     These provide good solderability while maintaining ground connectivity.
+
+18h. Copper pour edge clearance:
+     Pull zone outlines inward from Edge.Cuts by at least 1mm.
+     JLCPCB minimum is 0.3mm, but 1mm prevents copper exposure
+     from board edge tolerances during V-scoring or routing.

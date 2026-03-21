@@ -31,8 +31,9 @@
 | C8678 | SS34 Schottky diode | 1 | $0.0295 | $0.03 |
 | C15850 | 10uF 0805 MLCC | 1 | $0.0203 | $0.02 |
 | C17513 | 1k 0805 resistor | 1 | $0.0025 | $0.003 |
+| C149504 | 100k 0805 resistor | 1 | $0.0023 | $0.002 |
 
-**Basic parts subtotal: ~$0.19/board** (8 unique parts, 22 components)
+**Basic parts subtotal: ~$0.19/board** (9 unique parts, 23 components)
 
 ## BOM — Extended Parts ($3 fee per unique part)
 
@@ -56,7 +57,7 @@
 | C70376 | CR1220 battery holder | 1 | $0.06 | $0.06 | |
 | C89651 | SMBJ26CA TVS diode | 1 | $0.11 | $0.11 | |
 | C2992088 | 100uF electrolytic | 1 | $0.02 | $0.02 | |
-| C17407 | 100k 0805 resistor | 1 | $0.002 | $0.002 | **DISCONTINUED — swap needed** |
+| C149504 | 100k 0805 resistor | 1 | $0.0023 | $0.002 | Swapped from discontinued C17407 — **now Basic** |
 | C17436 | 110k 0805 resistor | 1 | $0.002 | $0.002 | |
 | C17665 | 4.22k 0805 resistor | 3 | $0.002 | $0.006 | |
 | C17673 | 4.7k 0805 resistor | 2 | $0.002 | $0.004 | |
@@ -72,7 +73,7 @@
 | PCB fabrication (5 pcs) | ~$7 total (~$1.40/board) |
 | Basic parts | $0.19 |
 | Extended parts (components) | $34.48 |
-| Extended parts fee (24 unique x $3) | **$72.00** |
+| Extended parts fee (23 unique x $3) | **$69.00** |
 | SMT assembly setup | ~$8.00 |
 | SMT per-joint cost (~200 joints) | ~$3.50 |
 | **Estimated total per board (qty 5)** | **~$118** |
@@ -80,12 +81,25 @@
 
 ## Issues
 
-- [ ] **C17407 (100k resistor, R20) is discontinued** — needs swap to C149504 or equivalent
-- [ ] 24 extended parts fees dominate cost at low qty
+- [x] **C17407 (100k resistor, R20) was discontinued** — swapped to C149504 (Basic 100k 0805 ±1%)
+- [ ] 23 extended parts fees dominate cost at low qty
 - [ ] 3x LMZM23601SILR @ $5.95 each is the biggest component cost driver
 
 ## Cost Savings Opportunities
 
-1. **Replace LMZM23601SILR** with discrete buck converter (e.g., TPS563200 ~$0.40 Basic) — saves ~$16.65 in parts + $3 extended fee per unique swap
-2. **Swap non-standard resistor values to Basic equivalents** (4.22k, 2.49k, 4.7k, 110k are all Extended) — could save $12-15 in extended fees
-3. **Higher quantity orders** amortize the $72 extended fee (qty 30: ~$2.40/board vs qty 5: ~$14.40/board)
+1. **Replace LMZM23601SILR** with discrete buck converter (e.g., MC34063AD ~$0.10 Basic) — saves ~$17 in parts + $3 extended fee, but adds ~9 extra passives and board area. Probably not worth it unless high volume.
+2. **Higher quantity orders** amortize the $69 extended fee (qty 30: ~$2.30/board vs qty 5: ~$13.80/board)
+
+## Resistor Alternative Package Investigation (2026-03-21)
+
+Checked whether extended 0805 resistor values have Basic alternatives in other packages (0402, 0603, 1206):
+
+| Value | 0402 | 0603 | 0805 | 1206 | Conclusion |
+|---|---|---|---|---|---|
+| 4.7k | Extended | Not found as Basic | Extended | — | **No Basic option in any package** |
+| 4.22k | — | — | Extended | Extended (4.3k close, C2906590) | **E96 value — no Basic in any package** |
+| 2.49k | Extended (C1854726, $0.09!) | — | Extended | — | **E96 value — no Basic, 0402 is expensive** |
+| 110k | — | Extended (C160518) | Extended | — | **No Basic option in any package** |
+| 100k | — | — | **Basic (C149504)** | — | **Swapped — DONE** |
+
+**Finding:** JLCPCB's Basic library only covers common E12/E24 values in select packages. Non-standard E96 values (4.22k, 2.49k) and even some E24 values (4.7k, 110k) are Extended regardless of package size. No further resistor savings possible without changing circuit values.
